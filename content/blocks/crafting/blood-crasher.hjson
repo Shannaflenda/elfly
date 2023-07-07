@@ -1,0 +1,44 @@
+name: "blood crasher"
+description: "can take hot and cold blood from elfly blood"
+type: GenericCrafter
+size: 3
+liquidCapacity: 1000
+hasItems: false
+health: 900
+hasLiquids: true
+hasPower: true
+consumes: {
+	power: 16.66666666666666666666666666666666666
+	liquid: {
+		liquid: elfly-blood
+		amount: 1.666666666666666666
+	}
+}
+outputLiquids: [
+	elfly-cold-blood/0.83333333333333333
+	elfly-hot-blood/0.8333333333333333
+]
+liquidOutputDirections: [
+	1
+	3
+]
+requirements: [
+	copper/4000
+	lead/3000
+	metaglass/1200
+	silicon/5000
+]
+research: {
+	parent: blood-machine
+	requirements: [
+		copper/45000
+		lead/45000
+		silicon/50000
+		metaglass/12000
+	]
+}
+dumpExtraLiquid: false
+carftTime: 10
+category: crafting
+outputFacing: true
+rotate: true
