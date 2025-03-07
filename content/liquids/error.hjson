@@ -1,7 +1,0 @@
-name: "error"
-color: ffffffff
-lightColor: ffffffff
-temperature: 0
-heatCapacity: 99999
-boilPoint: 99999
-moveThroughBlocks: true
