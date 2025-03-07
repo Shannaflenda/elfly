@@ -1,0 +1,11 @@
+type: Conduit
+health: 400
+name: mana tube
+size: 1
+leaks: false
+liquidPressure: 8000
+liquidCapacity: 10000
+requirements: [
+	copper/1
+]
+category: liquid
