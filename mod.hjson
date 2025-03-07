@@ -2,7 +2,7 @@ name: "elfly"
 displayName: "elfly"
 author: "[#b3e99e]Shannaflenda[]"
 description: "elfly"
-version: "3.3.3"
+version: "1.3.0"
 minGameVersion: "136"
 hidden: true
 dependencies: [
