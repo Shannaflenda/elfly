@@ -1,0 +1,27 @@
+name: flower processor
+health: 1280
+size: 1
+type: LogicBlock
+instructionsPerTick: 28
+maxInstructionsPerTick: 9999
+range: 800
+requirements: [
+	elfly-crystal/100
+	silicon/100
+	surge-alloy/100
+	plastanium/100
+	titanium/100
+	thorium/100
+]
+category: logic
+research: {
+	parent: crystal-machine
+	requirements: [
+	elfly-crystal/2000
+	silicon/2000
+	surge-alloy/2000
+	plastanium/2000
+	titanium/2000
+	thorium/2000
+	]
+}

@@ -1,0 +1,34 @@
+type: payload
+lowAltitude: true
+buildSpeed: 50000
+mineSpeed: 10
+mineTier: 5000
+speed: 1.20
+accel: 0.5
+drag: 0.02
+flying: true
+health: 328222748
+hitSize: 80
+armor: 328222748
+itemCapacity: 328222748
+engineOffset: 0
+outlineColor: a8ffeb
+range: 222
+maxRange: 222
+engineColor: a8ffebff
+aimDst: 10
+targetAir: true
+faceTarget: true
+payloadCapacity: 147456
+weapon: [
+]
+abilities: [
+	{
+	type: mindustry.entities.abilities.ForceFieldAbility
+	radius: 8000
+	regen: 328222748
+	max: 328222748
+	cooldown: 1
+	sides: 360
+	}
+]

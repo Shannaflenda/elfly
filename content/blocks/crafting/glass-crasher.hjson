@@ -1,0 +1,40 @@
+type: GenericCrafter
+name: glass crasher
+health: 1600
+hasPower: true
+hasLiquids: true
+liquidCapacity: 120
+itemsCapacity: 20
+size: 3
+category: crafting
+craftTime: 300
+consumes: {
+	items: {
+		items: [
+		metaglass/3
+		]
+	}
+	liquid: {
+		liquid: mana-water
+		amount: 2
+	}
+	power: 480	
+}
+outputItems: [
+	glass-shard/10
+]
+requirements: [
+	silicon/1200
+	surge-alloy/600
+	elfly-crystal/3500
+	plastanium/500
+]
+research: {
+	parent: mana-compressor
+	requirements: [
+		silicon/24000
+		surge-alloy/10000
+		plastanium/10000
+		elfly-crystal/50000
+	]
+}

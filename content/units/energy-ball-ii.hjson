@@ -1,0 +1,71 @@
+type: missile
+controller: MissileAI
+lowAltitude: true
+speed: 5
+rotateSpeed: 0.75
+lifetime: 300
+homingDelay: 21
+isEnemy: false
+allowedInPayloads: false
+playerControllable: false
+physics: false
+deathEffect: none
+useUnitCap: false
+createWreck: false
+createScorch: false
+flying: true
+hidden: true
+health: 328222
+hitSize: 7
+engineLayer: 110
+outlineColor: a8ffebff
+engineColor: a8ffebff
+trailColor: a8ffebff
+missileAccelTime: 60
+engineOffset: 6
+engineSize: 0
+drawCell: false
+range: 320
+maxRange: 320
+trailLength: 12
+weapons: [
+	{
+		name: a
+		shootCone: 360
+		shootOnDeath: true
+		controllable: true
+		shootSound: none
+		rotateSpeed: 999
+		bullet: {
+			type: basicBulletType
+			hitEffect: none
+			instantDisappear: true
+			lifetime: 8
+			speed: 40
+			width: 0
+			height: 0
+			despawnHit:true
+			fragRandomSpread: 0
+			fragSpread: 30
+			fragBullets: 5
+			fragVelocityMin: 1
+			fragBullet: {
+				killShooter: true
+				type: basicBulletType
+				instantDisappear: true
+				spawnUnit: elfly-energy-ball-iii
+			}
+		}
+	}
+]
+abilities: [
+	{
+	type: ForceFieldAbility
+	radius: 184
+	regen: 33.48333334
+	max: 328222
+	cooldown: 600
+	sides: 360
+	}
+]
+

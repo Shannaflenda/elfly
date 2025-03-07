@@ -1,0 +1,57 @@
+type: missile
+controller: MinerAI
+lowAltitude: true
+speed: 0
+rotateSpeed: 0.75
+lifetime: 300
+homingDelay: 42
+isEnemy: false
+allowedInPayloads: false
+playerControllable: false
+physics: false
+deathEffect: none
+useUnitCap: false
+createWreck: false
+createScorch: false
+flying: true
+hidden: true
+health: 32822
+hitSize: 7
+engineLayer: 110
+outlineColor: a8ffebff
+engineColor: a8ffebff
+trailColor: a8ffebff
+missileAccelTime: 60
+engineOffset: 6
+engineSize: 0
+drawCell: false
+trailLength: 12
+targetPriority: 328
+weapons: [
+]
+abilities: [
+	{
+	type: ForceFieldAbility
+	radius: 64
+	regen: 3.348333334
+	max: 32822
+	cooldown: 600
+	sides: 360
+	}
+	{
+	type: EnergyFieldAbility
+	reload: 10
+	damage: 200
+	maxTargets: 20
+	color: a8ffebff
+	healPercent: 6
+	y: 0
+	sectors: 3
+	rotateSpeed: 0.5
+	range: 64
+	hitBuilding: true
+	sectorRad: 0.1
+	effectRadius: 2
+	}
+]
+

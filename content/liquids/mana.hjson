@@ -1,0 +1,11 @@
+name: "mana"
+gas: true
+color: eeeeeeaa
+lightColor: eeeeeeaa
+temperature: 0
+heatCapacity: 50
+viscosity: 0
+boilPoint: 100
+coolant: false
+moveThroughBlocks: true
+research: mana-water

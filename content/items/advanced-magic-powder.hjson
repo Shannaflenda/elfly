@@ -1,0 +1,11 @@
+name: "advanced magic powder"
+color: ccaeeb
+hardness: 500
+cost: 0
+research: {
+	parent: basic-magic-powder
+	requirements: [
+		glass-shard/1200
+		basic-magic-powder/1200
+	]
+}

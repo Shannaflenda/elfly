@@ -1,0 +1,10 @@
+name: "basic magic powder"
+color: c3ebdc
+hardness: 100
+cost: 0
+research: {
+	parent: mana-water
+	requirements: [
+		elfly-crystal/1200
+	]
+}

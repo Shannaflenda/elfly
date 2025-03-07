@@ -1,0 +1,25 @@
+name: booster
+type: OverdriveProjector
+range: 800.0
+hasPower:true
+speedBoost: 15
+speedBoostPhase: 60
+phaseRangeBoost: 3200.0
+requirements: [
+	copper/1
+]
+consumes: {
+	power: 15000
+	items: {
+		items: [
+			elfly-crystal/1
+		]
+		booster: true
+				optional: true
+	}
+}
+size: 1
+health: 2000000
+category: effect
+baseColor: 98e378aa
+phaseColor: b0e4d2aa

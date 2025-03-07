@@ -1,0 +1,49 @@
+name: "crystal machine"
+description: "can make crystal"
+type: GenericCrafter
+size: 3
+itemCapacity: 30
+liquidCapacity: 100
+hasItems: true
+health: 900
+hasLiquids: true
+hasPower: true
+craftTime: 100
+consumes: {
+	power: 16.66666666666666666666666666666666666
+	items: {
+		items: [
+			scrap/10
+			silicon/5
+			plastanium/12
+			surge-alloy/3
+		]
+	}
+	liquid: {
+		liquid: cryofluid
+		amount: 0.5
+	}
+}
+outputItems: [
+	elfly-crystal/1
+]
+requirements: [
+	copper/3000
+	lead/2000
+	silicon/4500
+	plastanium/500
+	titanium/1200
+]
+research: {
+	parent: elfly
+	requirements: [
+		copper/3000
+		lead/2000
+		silicon/4500
+		plastanium/500
+		titanium/10000
+	]
+}
+dumpExtraLiquid: false
+carftTime: 10
+category: crafting

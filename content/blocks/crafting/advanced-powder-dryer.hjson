@@ -1,0 +1,44 @@
+type: GenericCrafter
+name: advanced powder dryer
+health: 4800
+hasPower: true
+hasLiquids: true
+liquidCapacity: 120
+itemCapacity: 200
+size: 3
+craftTime: 180
+category: crafting
+consumes: {
+	items: {
+		items: [
+		basic-magic-powder/3
+		surge-alloy/8
+		glass-shard/120
+		]
+	}
+	liquid: {
+		liquid: mana
+		amount: 0.333333334
+	}
+	power: 25
+}
+outputItems: [
+	advanced-magic-powder/1
+]
+requirements: [
+	silicon/1200
+	surge-alloy/600
+	elfly-crystal/3500
+	plastanium/500
+	glass-shard/1200
+]
+research: {
+	parent: mana-compressor
+	requirements: [
+		silicon/24000
+		surge-alloy/10000
+		plastanium/10000
+		elfly-crystal/50000
+		glass-shard/10000
+	]
+}

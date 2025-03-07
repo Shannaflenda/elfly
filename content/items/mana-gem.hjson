@@ -1,0 +1,5 @@
+name: "mana gem"
+color: f2f2f2
+hardness: 6000
+cost: 1200
+research: glass-shard

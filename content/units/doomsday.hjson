@@ -1,0 +1,76 @@
+type: flying
+lowAltitude: true
+buildSpeed: 50
+mineSpeed: 0
+mineTier: 50
+speed: 1.20
+accel: 0.5
+drag: 0.02
+flying: true
+health: 328222748
+hitSize: 105
+armor: 32822
+itemCapacity: 2500
+engineOffset: 172
+outlineColor: a8ffeb
+range: 736
+maxRange: 736
+engineColor: a8ffebff
+aimDst: 10
+targetAir: true
+faceTarget: false
+rotateSpeed: 0.5
+mineRange: 368
+weapons: [
+	{
+		name: doomsday-laser
+		x: 64
+		y: 100
+		rotateSpeed: 1.5
+		mirror: true
+		reload: 1
+		alternate: false
+		rotate: true
+		shootSound: none
+		bullet: {
+			type: ContinuousFlameBulletType
+			damageInterval: 1
+			length: 736
+			pierceArmor: true
+			collidesTeam: true
+			hittable: false
+			scaledSplashDamage: true
+			reflectable: false
+			healPercent: 100
+			makeFire: true
+			pierce: true
+			pierceBuilding: true
+			fragOnAbsorb: true
+			damage:	 54704
+			status: collapsing
+			statusDuration: 620628480000
+			shrinkY: 0
+			shrinkX: 0
+			lifetime: 16
+			flareColor: a8ffeb
+			colors: [a8ffebaa,a8ffeb77]
+			frontColor: a8ffebaa
+			backColor: a8ffeb77
+		}
+	}
+	{
+		name: doomsday-energy-weapon
+		x: 0
+		y: 0
+		rotateSpeed: 1
+		mirror: false
+		reload: 180
+		rotate: true
+		shootSound: none
+		bullet: {
+			type: basicBulletType
+			lifetime: 1
+			spawnUnit: elfly-energy-ball-i
+		}
+	}
+]
