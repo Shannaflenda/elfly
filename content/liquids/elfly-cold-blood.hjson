@@ -1,0 +1,9 @@
+name: "elfly cold blood"
+color: 00aaaaaa
+lightColor: 00aaaaaa
+temperature: 0
+heatCapacity: 328
+viscosity: 1
+boilPoint: 328
+coolant: false
+moveThroughBlocks: true

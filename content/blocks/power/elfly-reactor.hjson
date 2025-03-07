@@ -1,0 +1,29 @@
+type: NuclearReactor
+name: elfly reactor
+description: "use elfly crystal to make energy"
+itemCapacity: 100
+liquidCapacity: 100
+health: 6000
+outputsPower: true
+size: 12
+itemDuration: 3600
+heating: 50
+explosionRadius: 50
+explosionDamage: 99999999
+coolantPower: 100
+powerProduction: 16666.666666666666666666667
+fuelItem: elfly-crystal
+consumes: {
+	liquid: {
+		liquid: elfly-blood
+		amount: 5
+	}
+}
+requirements: [
+	elfly-crystal/500
+	surge-alloy/2000
+	silicon/5000
+	copper/12000
+	lead/12000
+]
+category: power

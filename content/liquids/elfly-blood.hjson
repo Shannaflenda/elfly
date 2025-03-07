@@ -1,0 +1,11 @@
+name: "elfly blood"
+color: c18ef5aa
+lightColor: c18ef5aa
+temperature: 10
+heatCapacity: 50
+viscosity: 1
+boilPoint: 328
+explosiveness: 30
+coolant: false
+flammability: 30
+moveThroughBlocks: true

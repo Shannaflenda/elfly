@@ -1,0 +1,7 @@
+name: "elfly"
+displayName: "elfly"
+author: "elfly"
+description: "elfly"
+version: "3.2.8"
+minGameVersion: "136"
+hidden: true
