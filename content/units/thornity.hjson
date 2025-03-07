@@ -1,0 +1,268 @@
+type: flying
+lowAltitude: true
+buildSpeed: 50
+mineSpeed: 50
+mineTier: 50
+speed: 1.20
+accel: 0.5
+drag: 0.02
+flying: true
+health: 3282227
+hitSize: 35
+armor: 328
+itemCapacity: 2500
+engineOffset: 20
+outlineColor: a8ffeb
+range: 262
+maxRange: 262
+engineColor: a8ffebff
+aimDst: 10
+targetAir: true
+faceTarget: true
+weapons: [
+	{
+		name: thornity-laser
+		x: 0
+		y: 16
+		mirror: false
+		shootSound: laser
+		reload: 80
+		bullet: {
+			hitEffect: {
+				type: ParticleEffect
+				line: true
+				offset: 30
+				particles: 13
+				lifetime: 60
+				length: 35
+				cone: -360
+				lenFrom: 6
+				lenTo: 0
+				colorFrom: ffffff
+				colorTo: a8ffebff
+			}
+			despawnEffect: {
+				type: ParticleEffect
+				line: true
+				offset: 30
+				particles: 13
+				lifetime: 60
+				length: 35
+				cone: -360
+				lenFrom: 6
+				lenTo: 0
+				colorFrom: ffffff
+				colorTo: a8ffebff
+			}
+			trailEffect: {
+				type: ParticleEffect
+				line: true
+				particles: 1
+				lifetime: 20
+				length: 0
+				sizeFrom: 8
+				colorFrom: a8ffbeff
+				colorTo: a8ffbe77
+			}
+			collidesTeam: true
+			hittable: false
+			splashDamageRadius: 1
+			scaledSplashDamage: true
+			sprite: elfly-flowey-thorna
+			reflectable: false
+			healPercent: 100
+			makeFire: true
+			pierce: true
+			pierceCap: -1
+			pierceBuilding: true
+			fragOnAbsorb: true
+			type: LaserBulletType
+			damage: 22748
+			puddles: 5
+			puddleRange: 10
+			puddleAmount: 120
+			puddleLiquid: arkycite
+			status: freezing
+			statusDuration: 150
+			shrinkY: 0
+			shrinkX: 0
+			frontLength: 2620
+			length: 2620
+			colors: [
+				a8ffeb55
+				a8ffebaa
+				ffffffff
+			]
+			pierceArmor: true
+			laserAbsorb: false
+			width: 10
+			sideLength: 16
+			frontColor: a8ffebaa
+			backColor: a8ffeb77
+			lifetime: 100
+			damageInterval: 0
+			fragBullets: 3
+			fragBullet: {
+				hitEffect: {
+					type: ParticleEffect
+					line: true
+					offset: 30
+					particles: 13
+					lifetime: 60
+					length: 35
+					cone: -360
+					lenFrom: 6
+					lenTo: 0
+					colorFrom: ffffff
+					colorTo: a8ffebff
+				}
+				despawnEffect: {
+					type: ParticleEffect
+					line: true
+					offset: 30
+					particles: 13
+					lifetime: 60
+					length: 35
+					cone: -360
+					lenFrom: 6
+					lenTo: 0
+					colorFrom: ffffff
+					colorTo: a8ffebff
+				}
+				trailEffect: {
+					type: ParticleEffect
+					line: true
+					particles: 1
+					lifetime: 20
+					length: 0
+					sizeFrom: 8
+					colorFrom: a8ffbeff
+					colorTo: a8ffbe77
+				}
+				collidesTeam: true
+				hittable: false
+				splashDamageRadius: 1
+				scaledSplashDamage: true
+				sprite: elfly-flowey-thorna
+				reflectable: false
+				healPercent: 100
+				makeFire: true
+				pierce: true
+				pierceCap: -1
+				pierceBuilding: true
+				fragOnAbsorb: true
+				type: LaserBulletType
+				damage: 2748
+				puddles: 1
+				puddleRange: 10
+				puddleAmount: 10
+				puddleLiquid: arkycite
+				status: freezing
+				statusDuration: 150
+				shrinkY: 0
+				shrinkX: 0
+				frontLength: 262
+				length: 262
+				colors: [
+					a8ffeb55
+					a8ffebaa
+					ffffffff
+				]
+				sideLength: 8
+				sideWidth: 10
+				pierceArmor: true
+				laserAbsorb: false
+				width: 10
+				frontColor: a8ffebaa
+				backColor: a8ffeb77
+				lifetime: 100
+				damageInterval: 0
+			}
+		}
+	}
+	{
+		name: thornity-laser
+		x: 12
+		y: -12
+		mirror: true
+		shootSound: laser
+		reload: 40
+		bullet: {
+			hitEffect: {
+				type: ParticleEffect
+				line: true
+				offset: 30
+				particles: 13
+				lifetime: 60
+				length: 35
+				cone: -360
+				lenFrom: 6
+				lenTo: 0
+				colorFrom: ffffff
+				colorTo: a8ffebff
+			}
+			despawnEffect: {
+				type: ParticleEffect
+				line: true
+				offset: 30
+				particles: 13
+				lifetime: 60
+				length: 35
+				cone: -360
+				lenFrom: 6
+				lenTo: 0
+				colorFrom: ffffff
+				colorTo: a8ffebff
+			}
+			trailEffect: {
+				type: ParticleEffect
+				line: true
+				particles: 1
+				lifetime: 20
+				length: 0
+				sizeFrom: 8
+				colorFrom: a8ffbeff
+				colorTo: a8ffbe77
+			}
+			collidesTeam: true
+			hittable: false
+			splashDamageRadius: 1
+			scaledSplashDamage: true
+			sprite: elfly-flowey-thorna
+			reflectable: false
+			healPercent: 100
+			makeFire: true
+			pierce: true
+			pierceCap: -1
+			pierceBuilding: true
+			fragOnAbsorb: true
+			type: LaserBulletType
+			damage: 748
+			puddles: 3
+			puddleRange: 10
+			puddleAmount: 30
+			puddleLiquid: arkycite
+			status: freezing
+			statusDuration: 150
+			shrinkY: 0
+			shrinkX: 0
+			frontLength: 262
+			length: 262
+			colors: [
+				a8ffeb55
+				a8ffebaa
+				ffffffff
+			]
+			pierceArmor: true
+			laserAbsorb: false
+			width: 10
+			sideLength: 262
+			sideWidth: 1
+			sideAngle: 25
+			frontColor: a8ffebaa
+			backColor: a8ffeb77
+			lifetime: 100
+			damageInterval: 0
+		}
+	}
+]

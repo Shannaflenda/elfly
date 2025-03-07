@@ -1,0 +1,64 @@
+type: multicraft.MultiCrafter
+size: 5
+health: 4800
+menu: Detailed
+hasPower: true
+hasItems: true
+hasLiquids: true
+liquidCapacity: 60000
+itemCapacity: 60000
+recipes: [
+{
+	input: {
+		items: [
+		elfly-elfly-crystal/120
+		elfly-basic-magic-powder/25
+		]
+		fluids: [
+		elfly-mana/10
+		]
+		power: 2666.666667
+	}
+	output: {
+		fluids: [
+		elfly-fortress-mana/5
+		]
+	}
+	craftTime: 480
+}
+{
+	input: {
+		items: [
+		thorium/1500
+		elfly-basic-magic-powder/10
+		]
+		power: 1333.333334
+	}
+	output: {
+		items: [
+		copper/15000
+		]
+	}
+	craftTime: 900
+}
+]
+requirements: [
+	elfly-crystal/1200
+	silicon/1400
+	surge-alloy/500
+	plastanium/800
+	metaglass/1200
+	glass-shard/500
+]
+category: crafting
+research: {
+	parent: glass-crasher
+	requirements: [
+	elfly-crystal/12000
+	silicon/14000
+	surge-alloy/10000
+	plastanium/20000
+	metaglass/36000
+	glass-shard/10000
+	]
+}

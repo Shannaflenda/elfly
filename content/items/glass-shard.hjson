@@ -1,0 +1,10 @@
+name: "glass shard"
+color: eeeeee
+hardness: 1000
+cost: 250
+research: {
+	parent: mana-water
+	requirements: [
+		elfly-crystal/1200
+	]
+}

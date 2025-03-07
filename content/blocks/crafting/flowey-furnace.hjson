@@ -1,0 +1,27 @@
+type: GenericCrafter
+name: flowey furnace
+health: 2400
+hasPower: true
+hasLiquids: true
+liquidCapacity: 1200
+itemCapacity: 50
+size: 4
+category: crafting
+consumes: {
+	items: {
+		items: [
+			elfly-crystal/12
+		]
+	}
+	liquids: [
+		mana/4.166667
+		fortress-mana/1.25
+	]
+}
+requirements: [
+	elfly-crystal/1200
+	silicon/1500
+	glass-shard/1800
+	surge-alloy/1200
+]
+research: basic-magic-table

@@ -1,0 +1,33 @@
+type: BurstDrill
+name: crystal drill
+size: 2
+health: 4000
+itemCapacity: 150
+liquidCapacity: 120
+drillTime: 20
+drillEffect: mine
+invertedTime: 0.003334
+tier: 120
+hardnessDrillMutiplier: 120
+liquidBoostIntensity: 1.4
+hasLiquids: true
+hasPower: true
+hasItems: true
+consumes: {
+	power: 50
+	liquid: {
+		liquid: water
+		amount: 0.05
+		booster: true
+	}
+}
+requirements: [
+	elfly-crystal/1500
+	surge-alloy/1500
+	metaglass/3000
+	plastanium/5000
+	thorium/8000
+	silicon/5000
+]
+category: production
+research: elfly

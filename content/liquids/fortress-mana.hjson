@@ -1,0 +1,11 @@
+name: "fortress mana"
+gas: true
+color: c3ebdcaa
+lightColor: c3ebdcaa
+temperature: 0
+heatCapacity: 50
+viscosity: 1
+boilPoint: 100
+coolant: false
+moveThroughBlocks: true
+research: mana

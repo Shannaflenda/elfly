@@ -1,0 +1,42 @@
+type: GenericCrafter
+name: basic powder dryer
+health: 480
+hasPower: true
+hasLiquids: true
+liquidCapacity: 120
+itemCapacity: 20
+size: 1
+category: crafting
+craftTime: 60
+consumes: {
+	items: {
+		items: [
+		glass-shard/1
+		]
+	}
+	liquid: {
+		liquid: mana-water
+		amount: 1
+	}
+	power: 8
+}
+outputItems: [
+	basic-magic-powder/1
+]
+requirements: [
+	silicon/1200
+	surge-alloy/600
+	elfly-crystal/3500
+	plastanium/500
+	glass-shard/1200
+]
+research: {
+	parent: glass-crasher
+	requirements: [
+		silicon/24000
+		surge-alloy/10000
+		plastanium/10000
+		elfly-crystal/50000
+		glass-shard/10000
+	]
+}

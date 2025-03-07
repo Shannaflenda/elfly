@@ -1,0 +1,33 @@
+type: BurstDrill
+name: alloy drill
+size: 3
+health: 48000
+itemCapacity: 1200
+liquidCapacity: 1200
+drillTime: 10
+drillEffect: mine
+invertedTime: 0.004167
+tier: 120
+hardnessDrillMutiplier: 120
+liquidBoostIntensity: 1.7
+hasLiquids: true
+hasPower: true
+hasItems: true
+consumes: {
+	power: 416.6667
+	liquid: {
+		liquid: cryofluid
+		amount: 0.25
+		booster: true
+	}
+}
+requirements: [
+	flowey-alloy/1200
+	elfly-crystal/4200
+	surge-alloy/4000
+	metaglass/7200
+	plastanium/10000
+	silicon/12000
+]
+category: production
+research: crystal-drill

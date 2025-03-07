@@ -1,0 +1,9 @@
+name: "collapse crystal"
+color: ccaeeb
+hardness: 80000
+cost: 120000
+explosiveness: 1000
+flammability: 1000
+radioactivity: 0.1
+charge: 1000
+research: mana-gem

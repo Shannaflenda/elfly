@@ -1,0 +1,65 @@
+type: payload
+lowAltitude: true
+buildSpeed: 50
+mineSpeed: 50
+mineTier: 50
+speed: 1.20
+accel: 0.5
+drag: 0.02
+flying: true
+health: 3282227
+hitSize: 35
+armor: 328
+itemCapacity: 25000
+engineOffset: 17
+outlineColor: a8ffeb
+range: 222
+maxRange: 222
+engineColor: a8ffebff
+aimDst: 10
+targetAir: true
+faceTarget: true
+payloadCapacity: 230400
+weapon: [
+]
+abilities: [
+	{
+	type: EnergyFieldAbility
+	statusDuration: 60
+	status: freezing
+	reload: 20
+	damage: 200
+	maxTargets: 200
+	color: a8ffebff
+	healPercent: 100
+	y: 0
+	sector: 3
+	rotateSpeed: 1
+	range: 384
+	hitBuilding: true
+	sectorRad: 0.1
+	effectRadius: 2
+	}
+	{
+	type: mindustry.entities.abilities.ForceFieldAbility
+	radius: 1776
+	regen: 334.8333334
+	max: 3282227
+	cooldown: 600
+	sides: 360
+	}
+	{
+	type: mindustry.entities.abilities.ForceFieldAbility
+	radius: 176
+	regen: 3.333333334
+	max: 32822
+	cooldown: 1800
+	sides: 360
+	}
+	{
+	type: RepairFieldAbility
+	range: 384
+	amount: 20090
+	reload: 60
+	}
+]

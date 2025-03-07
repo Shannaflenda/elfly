@@ -1,0 +1,10 @@
+name: "mana water"
+color: eeeeeeaa
+lightColor: eeeeeeaa
+temperature: 0
+heatCapacity: 50
+viscosity: 1
+boilPoint: 100
+coolant: false
+moveThroughBlocks: true
+research: elfly-crystal

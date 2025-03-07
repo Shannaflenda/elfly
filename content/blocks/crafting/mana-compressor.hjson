@@ -1,0 +1,63 @@
+type: multicraft.MultiCrafter
+size: 2
+health: 480
+menu: Detailed
+hasPower: true
+hasItems: true
+hasLiquids: true
+liquidCapacity: 3000
+itemCapacity: 20
+recipes: [
+{
+	input: {
+		items: [
+		elfly-elfly-crystal/1
+		]
+		fluids: [
+		water/2
+		]
+		power: 6
+	}
+	output: {
+		fluids: [
+		elfly-mana-water/2
+		]
+	}
+	craftTime: 600
+}
+{
+	input: {
+		items: [
+		elfly-basic-magic-powder/2
+		]
+		fluids: [
+		elfly-mana-water/2.5
+		]
+		power: 6
+	}
+	output: {
+		fluids: [
+		elfly-mana/0.5
+		]
+	}
+	craftTime: 120
+}
+]
+requirements: [
+	elfly-crystal/1200
+	silicon/1400
+	surge-alloy/500
+	plastanium/800
+	metaglass/1200
+]
+category: crafting
+research: {
+	parent: crystal-machine
+	requirements: [
+	elfly-crystal/12000
+	silicon/14000
+	surge-alloy/10000
+	plastanium/20000
+	metaglass/36000
+	]
+}
