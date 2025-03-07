@@ -18,6 +18,9 @@ consumes: {
 		fortress-mana/1.25
 	]
 }
+outputItems: [
+	flowey-alloy/1
+]
 requirements: [
 	elfly-crystal/1200
 	silicon/1500

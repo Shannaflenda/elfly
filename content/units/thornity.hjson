@@ -182,11 +182,11 @@ weapons: [
 	}
 	{
 		name: thornity-laser
-		x: 12
-		y: -12
+		x: 13
+		y: -11
 		mirror: true
 		shootSound: laser
-		reload: 40
+		reload: 20
 		bullet: {
 			hitEffect: {
 				type: ParticleEffect
@@ -258,7 +258,7 @@ weapons: [
 			width: 10
 			sideLength: 262
 			sideWidth: 1
-			sideAngle: 25
+			sideAngle: 10
 			frontColor: a8ffebaa
 			backColor: a8ffeb77
 			lifetime: 100
