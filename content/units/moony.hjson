@@ -87,7 +87,7 @@ weapons: [
 		bullet: {
 			type: ContinuousLaserBulletType
 			damage: 125000
-			length: 2000
+			length: 1500
 			width: 5.625
 			hitEffect: hitMeltdown
 			lifetime: 400
@@ -124,7 +124,7 @@ weapons: [
 		bullet: {
 			type: ContinuousLaserBulletType
 			damage: 125000
-			length: 2000
+			length: 1500
 			width: 5.625
 			hitEffect: hitMeltdown
 			lifetime: 400
@@ -161,7 +161,7 @@ weapons: [
 		bullet: {
 			type: ContinuousLaserBulletType
 			damage: 125000
-			length: 2000
+			length: 1500
 			width: 5.625
 			hitEffect: hitMeltdown
 			lifetime: 400
@@ -198,7 +198,7 @@ weapons: [
 		bullet: {
 			type: ContinuousLaserBulletType
 			damage: 125000
-			length: 2000
+			length: 1500
 			width: 5.625
 			hitEffect: hitMeltdown
 			lifetime: 400
