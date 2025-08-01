@@ -3,7 +3,7 @@ lowAltitude: true
 buildSpeed: 50
 mineSpeed: 50
 mineTier: 50
-speed: 1.20
+speed: 0.1333333
 accel: 0.5
 drag: 0.02
 flying: true
@@ -17,8 +17,8 @@ maxRange: 500
 engineColor: ddddddff
 aimDst: 0
 targetAir: true
-faceTarget: false
-rotateSpeed: 0.0000055555555555555555555555555555556
+faceTarget: true
+rotateSpeed: 0.01
 engineSize: 0
 engines: [
 	{
@@ -98,6 +98,8 @@ weapons: [
 			incendChance: 0
 			incendSpread: 0
 			incendAmount: 0
+			laserAbsorb: false
+			buildingDamageMultiplier: 0
 			colors: [
 				dddddd66
 				ddddddff
@@ -133,6 +135,8 @@ weapons: [
 			incendChance: 0
 			incendSpread: 0
 			incendAmount: 0
+			laserAbsorb: false
+			buildingDamageMultiplier: 0
 			colors: [
 				dddddd66
 				ddddddff
@@ -168,6 +172,8 @@ weapons: [
 			incendChance: 0
 			incendSpread: 0
 			incendAmount: 0
+			laserAbsorb: false
+			buildingDamageMultiplier: 0
 			colors: [
 				dddddd66
 				ddddddff
@@ -203,6 +209,156 @@ weapons: [
 			incendChance: 0
 			incendSpread: 0
 			incendAmount: 0
+			laserAbsorb: false
+			buildingDamageMultiplier: 0
+			colors: [
+				dddddd66
+				ddddddff
+				ffffffff
+				ffffffff
+			]
+		}
+	}
+	{
+		name: none
+		x: 0
+		y: 320
+		rotateSpeed: 0
+		mirror: false
+		reload: 10
+		rotate: true
+		shootSound: none
+		baseRotation: 0
+		alwaysShooting: true
+		continuous: true
+		alwaysContinuous: true
+		bullet: {
+			type: ContinuousLaserBulletType
+			damage: 125000
+			length: 10000
+			width: 5.625
+			hitEffect: hitMeltdown
+			lifetime: 400
+			shake: 0
+			despawnEffect: none
+			smokeEffect: none
+			chargeEffect: none
+			incendChance: 0
+			incendSpread: 0
+			incendAmount: 0
+			laserAbsorb: false
+			buildingDamageMultiplier: 0
+			colors: [
+				dddddd66
+				ddddddff
+				ffffffff
+				ffffffff
+			]
+		}
+	}
+	{
+		name: none
+		x: 0
+		y: -320
+		rotateSpeed: 0
+		mirror: false
+		reload: 10
+		rotate: true
+		shootSound: none
+		baseRotation: 180
+		alwaysShooting: true
+		continuous: true
+		alwaysContinuous: true
+		bullet: {
+			type: ContinuousLaserBulletType
+			damage: 125000
+			length: 10000
+			width: 5.625
+			hitEffect: hitMeltdown
+			lifetime: 400
+			shake: 0
+			despawnEffect: none
+			smokeEffect: none
+			chargeEffect: none
+			incendChance: 0
+			incendSpread: 0
+			incendAmount: 0
+			laserAbsorb: false
+			buildingDamageMultiplier: 0
+			colors: [
+				dddddd66
+				ddddddff
+				ffffffff
+				ffffffff
+			]
+		}
+	}
+	{
+		name: none
+		x: 320
+		y: 0
+		rotateSpeed: 0
+		mirror: false
+		reload: 10
+		rotate: true
+		shootSound: none
+		baseRotation: -90
+		alwaysShooting: true
+		continuous: true
+		alwaysContinuous: true
+		bullet: {
+			type: ContinuousLaserBulletType
+			damage: 125000
+			length: 10000
+			width: 5.625
+			hitEffect: hitMeltdown
+			lifetime: 400
+			shake: 0
+			despawnEffect: none
+			smokeEffect: none
+			chargeEffect: none
+			incendChance: 0
+			incendSpread: 0
+			incendAmount: 0
+			laserAbsorb: false
+			buildingDamageMultiplier: 0
+			colors: [
+				dddddd66
+				ddddddff
+				ffffffff
+				ffffffff
+			]
+		}
+	}
+	{
+		name: none
+		x: -320
+		y: 0
+		rotateSpeed: 0
+		mirror: false
+		reload: 10
+		rotate: true
+		shootSound: none
+		baseRotation: 90
+		alwaysShooting: true
+		continuous: true
+		alwaysContinuous: true
+		bullet: {
+			type: ContinuousLaserBulletType
+			damage: 125000
+			length: 10000
+			width: 5.625
+			hitEffect: hitMeltdown
+			lifetime: 400
+			shake: 0
+			despawnEffect: none
+			smokeEffect: none
+			chargeEffect: none
+			incendChance: 0
+			incendSpread: 0
+			incendAmount: 0
+			laserAbsorb: false
+			buildingDamageMultiplier: 0
 			colors: [
 				dddddd66
 				ddddddff
