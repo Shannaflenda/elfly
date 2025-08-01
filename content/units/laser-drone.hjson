@@ -1,0 +1,74 @@
+type: missile
+controller: MinerAI
+lowAltitude: true
+speed: 0
+rotateSpeed: 1
+lifetime: 150
+isEnemy: false
+allowedInPayloads: false
+playerControllable: false
+physics: false
+deathEffect: none
+useUnitCap: false
+createWreck: false
+createScorch: false
+flying: true
+hidden: true
+health: 1200
+hitSize: 6
+engineSize: 0
+drawCell: false
+targetPriority: -1
+outlineColor: a8ffeb
+weapons: [
+	{
+		name: zzzz
+		shootSound: laserblast
+		chargeSound: lasercharge
+		soundPitchMin: 1
+		top: false
+		mirror: false
+		shake: 14
+		shootY: 5
+		x: 0
+		y: 0
+		reload: 350
+		recoil: 0
+		cooldownTime: 0
+		parentizeEffects: true
+		shootOnDeath: false
+		rotate: true
+		rotateSpeed: 12
+		bullet: {
+			type: LaserBulletType
+			killShooter: false
+			length: 828
+			damage: 112	
+			width: 45
+			lifetime: 39
+			largeHit: true
+			lightColor: ffd399
+			lightningColor: ffd399
+			healPercent: 5
+			collidesTeam: true
+			sideAngle: 15
+			sideWidth: 0
+			sideLength: 0
+			makeFire: true
+			buildingDamageMultiplier: 0.01
+			colors: [
+				ffd39966
+				ffd399ff
+				ffffffff
+			]
+		}
+	}
+]
+zzzzzzz: {
+	lightningSpacing: 35
+	lightningLength: 3
+	lightningDelay: 1.1
+	lightningLengthRand: 15
+	lightningDamage: 10
+	lightningAngleRand: 40
+}

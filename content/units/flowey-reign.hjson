@@ -1,0 +1,96 @@
+type: mech
+buildSpeed: 50
+mineSpeed: 50
+mineTier: 50
+speed: 0.6
+hitSize: 26
+rotateSpeed: 2.475
+health: 550000
+armor: 55
+mechStepParticles: true
+stepShake: 0.75
+drownTimeMultiplier: 6
+mechFrontSway: 1.9
+mechSideSway: 0.6
+outlineColor: a8ffeb
+ammoType: {
+	type: ItemAmmoType
+	item: thorium
+}
+weapons: [
+	{
+		name: flowey-reign-weapon
+		top: false
+		y: 1f
+		x: 21.5
+		shootY: 11
+		reload: 9
+		recoil: 5
+		shake: 2
+		ejectEffect: casing4
+		shootSound: bang
+		bullet: {
+			type: ArtilleryBulletType
+			speed: 13
+			damage: 190
+			bulletSprite: shell
+			hitEffect: sapExplosion
+			knockback: 0.8
+			lifetime: 25
+			width: 25
+			height: 25
+			collidesTiles: true
+			collides: true
+			ammoMultiplier: 4
+			splashDamageRadius: 80
+			splashDamage: 228
+			backColor: 6d56bf
+			frontColor: bf92f9
+			lightningColor: bf92f9
+			lightning: 5
+			lightningLength: 20
+			smokeEffect: shootBigSmoke2
+			hitShake: 10
+			lightRadius: 40
+			lightColor: 665c9f
+			lightOpacity: 0.6
+			status: sapped
+			statusDuration: 600
+			fragLifeMin: 0.3
+			fragBullets: 9
+			fragBullet: {
+				type: ArtilleryBulletType
+				speed: 2.3
+				damage: 114
+				bulletSprite: shell
+				hitEffect: sapExplosion
+				knockback: 0.8
+				lifetime: 90
+				width: 20
+				height: 20
+				collidesTiles: false
+				splashDamageRadius: 70
+				splashDamage: 152
+				backColor: 6d56bf
+				frontColor: bf92f9
+				lightningColor: bf92f9
+				lightning: 2
+				lightningLength: 5
+				smokeEffect: shootBigSmoke2
+				hitShake: 5
+				lightRadius: 30
+				lightColor: 665c9f
+				lightOpacity: 0.5
+				status: sapped
+				statusDuration: 600
+				fragSpread: 0
+				fragBullets: 1
+				fragVelocityMin: 1
+				fragBullet: {
+					instantDisappear: true
+					spawnUnit: elfly-laser-drone
+				}
+			}
+		}
+	}
+]

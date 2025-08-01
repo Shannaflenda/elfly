@@ -13,14 +13,30 @@ armor: 328
 itemCapacity: 25000
 engineOffset: 17
 outlineColor: a8ffeb
-range: 222
-maxRange: 222
+range: 500
+maxRange: 500
 engineColor: a8ffebff
 aimDst: 10
 targetAir: true
 faceTarget: true
 payloadCapacity: 230400
-weapon: [
+weapons: [
+	{
+		name: d
+		x: 32
+		y: -40
+		rotateSpeed: 8
+		mirror: true
+		reload: 6
+		alternate: true
+		rotate: true
+		shootSound: none
+		bullet: {
+			type: basicBulletType
+			lifetime: 1
+			spawnUnit: elfly-energy-ball-iii-ii
+		}
+	}
 ]
 abilities: [
 	{
@@ -31,7 +47,7 @@ abilities: [
 	damage: 200
 	maxTargets: 200
 	color: a8ffebff
-	healPercent: 100
+	healPercent: 6
 	y: 0
 	sector: 3
 	rotateSpeed: 1
@@ -42,7 +58,7 @@ abilities: [
 	}
 	{
 	type: mindustry.entities.abilities.ForceFieldAbility
-	radius: 1776
+	radius: 400
 	regen: 334.8333334
 	max: 3282227
 	cooldown: 600

@@ -1,10 +1,10 @@
 type: missile
 controller: MissileAI
 lowAltitude: true
-speed: 5
-rotateSpeed: 3
-lifetime: 180
-homingDelay: 10
+speed: 2.1333
+rotateSpeed: 0.75
+lifetime: 300
+homingDelay: 400
 isEnemy: false
 allowedInPayloads: false
 playerControllable: false
@@ -15,65 +15,52 @@ createWreck: false
 createScorch: false
 flying: true
 hidden: true
-health: 32822
-hitSize: 7
+health: 3282227
+hitSize: 0
 engineLayer: 110
 outlineColor: a8ffebff
 engineColor: a8ffebff
 trailColor: a8ffebff
-missileAccelTime: 60
+missileAccelTime: 6000000
 engineOffset: 6
 engineSize: 0
 drawCell: false
-range: 0
-maxRange: 0
-trailLength: 12
-targetPriority: 328
+drawBody: false
+drawMinimap: false
+range: 640
+maxRange: 640
+trailLength: 0
+targetable: false
 weapons: [
 	{
 		name: a
 		shootCone: 360
-		shootOnDeath: true
+		shootOnDeath: false
 		controllable: true
 		shootSound: none
+		reload: 99999
 		rotateSpeed: 999
 		bullet: {
 			type: basicBulletType
 			hitEffect: none
 			instantDisappear: true
-			killShooter: true
 			lifetime: 8
-			speed: 0
+			speed: 80
 			width: 0
 			height: 0
 			despawnHit:true
-			spawnUnit: elfly-energy-ball-iv
+			fragRandomSpread: 0
+			fragSpread: 30
+			fragBullets: 5
+			fragVelocityMin: 1
+			fragBullet: {
+				type: basicBulletType
+				instantDisappear: true
+				spawnUnit: elfly-energy-ball-ii
+			}
 		}
 	}
 ]
 abilities: [
-	{
-	type: ForceFieldAbility
-	radius: 64
-	regen: 3.348333334
-	max: 32822
-	cooldown: 600
-	sides: 360
-	}
-	{
-	type: EnergyFieldAbility
-	reload: 10
-	damage: 200
-	maxTargets: 20
-	color: a8ffebff
-	healPercent: 6
-	y: 0
-	sectors: 3
-	rotateSpeed: 0.5
-	range: 64
-	hitBuilding: true
-	sectorRad: 0.1
-	effectRadius: 2
-	}
 ]
 

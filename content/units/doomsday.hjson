@@ -32,6 +32,8 @@ weapons: [
 		alternate: false
 		rotate: true
 		shootSound: none
+		continuous: true
+		alwaysContinuous: true
 		bullet: {
 			type: ContinuousFlameBulletType
 			damageInterval: 1

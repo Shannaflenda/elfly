@@ -1,10 +1,10 @@
 type: missile
-controller: MissileAI
+controller: MinerAI
 lowAltitude: true
-speed: 5
-rotateSpeed: 3
-lifetime: 180
-homingDelay: 10
+speed: 0
+rotateSpeed: 0.75
+lifetime: 480
+homingDelay: 42
 isEnemy: false
 allowedInPayloads: false
 playerControllable: false
@@ -25,31 +25,9 @@ missileAccelTime: 60
 engineOffset: 6
 engineSize: 0
 drawCell: false
-range: 0
-maxRange: 0
 trailLength: 12
 targetPriority: 328
 weapons: [
-	{
-		name: a
-		shootCone: 360
-		shootOnDeath: true
-		controllable: true
-		shootSound: none
-		rotateSpeed: 999
-		bullet: {
-			type: basicBulletType
-			hitEffect: none
-			instantDisappear: true
-			killShooter: true
-			lifetime: 8
-			speed: 0
-			width: 0
-			height: 0
-			despawnHit:true
-			spawnUnit: elfly-energy-ball-iv
-		}
-	}
 ]
 abilities: [
 	{
@@ -63,11 +41,29 @@ abilities: [
 	{
 	type: EnergyFieldAbility
 	reload: 10
-	damage: 200
+	damage: 20
 	maxTargets: 20
 	color: a8ffebff
-	healPercent: 6
+	healPercent: 0.025
 	y: 0
+	status: blasted
+	sectors: 3
+	rotateSpeed: 0.5
+	range: 64
+	hitBuilding: true
+	sectorRad: 0.1
+	effectRadius: 2
+	}
+	{
+	type: EnergyFieldAbility
+	reload: 10
+	damage: 20
+	maxTargets: 20
+	color: a8ffebff
+	healPercent: 0.025
+	y: 0
+	status: freezing
+	statusDuration: 60
 	sectors: 3
 	rotateSpeed: 0.5
 	range: 64

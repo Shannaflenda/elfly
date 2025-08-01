@@ -2,7 +2,7 @@ type: missile
 controller: MissileAI
 lowAltitude: true
 speed: 5
-rotateSpeed: 0.75
+rotateSpeed: 1.5
 lifetime: 300
 homingDelay: 21
 isEnemy: false
