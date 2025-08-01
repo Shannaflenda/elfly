@@ -8,3 +8,4 @@ hidden: true
 dependencies: [
 	multi-crafter
 ]
+hideBrowser: true
