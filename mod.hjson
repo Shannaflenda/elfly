@@ -5,7 +5,4 @@ description: "elfly"
 version: "1.3.0"
 minGameVersion: "136"
 hidden: true
-dependencies: [
-	multi-crafter
-]
 hideBrowser: true
