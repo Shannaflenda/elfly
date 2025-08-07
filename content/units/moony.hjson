@@ -7,17 +7,17 @@ speed: 0.1333333
 accel: 0.5
 drag: 0.02
 flying: true
-health: 3282227
-hitSize: 35
-armor: 328
+health: 1500000
+hitSize: 400
+armor: 15000
 itemCapacity: 2500
-outlineColor: dddddd
+outlineColor: 8a8a8a
 range: 500
 maxRange: 500
-engineColor: ddddddff
+engineColor: 8a8a8aff
 aimDst: 0
 targetAir: true
-faceTarget: true
+faceTarget: false
 rotateSpeed: 0.01
 engineSize: 0
 engines: [
@@ -73,24 +73,852 @@ engines: [
 weapons: [
 	{
 		name: none
+		x: 0
+		y: 0
+		rotateSpeed: 1.5
+		mirror: false
+		reload: 600
+		rotate: true
+		shootSound: none
+		baseRotation: 0
+		alwaysShooting: true
+		continuous: true
+		alwaysContinuous: true
+		bullet: {
+			type: ContinuousLaserBulletType
+			damage: 1250
+			buildingDamageMultiplier: 0.05
+			pierceArmor: true
+			length: 400
+			width: 5.625
+			hitEffect: none
+			lifetime: 600
+			shake: 0
+			despawnEffect: none
+			smokeEffect: none
+			chargeEffect: none
+			incendChance: 0
+			incendSpread: 0
+			incendAmount: 0
+			laserAbsorb: false
+			lightStroke: 20
+			colors: [
+				8a8a8a30
+				8a8a8a80
+				a6a6a6ff
+				ffffffff
+			]
+		}
+	}
+	
+	{
+		name: moony-missile-launcher
+		x: 76.536686473
+		y: 184.7759065
+		rotateSpeed: 0.5
+		rotationLimit: 120
+		inaccuracy: 30
+		shootCone: 30
+		mirror: false
+		reload: 600
+		rotate: true
+		shootSound: none
+		baseRotation: -22.5
+		alwaysShooting: false
+		continuous: false
+		alwaysContinuous: false
+		shoot: {
+			type: ShootBarrel
+			barrels: [
+				-6, 0, 0
+				2, -4, 0
+				-2, 4, 0
+				6, 4, 0
+				2, 0, 0
+				-6, -4, 0
+				6, 0, 0
+				-2, -4, 0
+				-2, 0, 0
+				-6, 4, 0
+				6, -4, 0
+				2, 4, 0
+			]
+			shots: 12
+			shotDelay: 8
+		}
+		bullet: {
+			type: MissileBulletType
+			speed: 10
+			damage: 1200
+			buildingDamageMultiplier: 0.2
+			lifetime: 600
+			rangeOverride: 800
+			sprite: elfly-long-missile
+			pierceArmor: true
+			frontColor: a6a6a6
+			backColor: 8a8a8a
+			trailColor: 8a8a8a
+			width: 8
+			height: 16
+			shrinkY: 0
+			splashDamageRadius: 40
+			splashDamage: 3000
+			hitEffect: blastExplosion
+			despawnEffect: blastExplosion
+			ammoMultiplier: 4
+			homingRange: 200
+			homingPower: 0.05
+			homingDelay: 30
+			hittable: false
+		}
+	}
+	{
+		name: moony-missile-launcher
+		x: -76.536686473
+		y: 184.7759065
+		rotateSpeed: 0.5
+		rotationLimit: 120
+		inaccuracy: 30
+		shootCone: 30
+		mirror: false
+		reload: 600
+		rotate: true
+		shootSound: none
+		baseRotation: 22.5
+		alwaysShooting: false
+		continuous: false
+		alwaysContinuous: false
+		shoot: {
+			type: ShootBarrel
+			barrels: [
+				-6, 0, 0
+				2, -4, 0
+				-2, 4, 0
+				6, 4, 0
+				2, 0, 0
+				-6, -4, 0
+				6, 0, 0
+				-2, -4, 0
+				-2, 0, 0
+				-6, 4, 0
+				6, -4, 0
+				2, 4, 0
+			]
+			shots: 12
+			shotDelay: 8
+		}
+		bullet: {
+			type: MissileBulletType
+			speed: 10
+			damage: 1200
+			buildingDamageMultiplier: 0.2
+			lifetime: 600
+			rangeOverride: 800
+			sprite: elfly-long-missile
+			pierceArmor: true
+			frontColor: a6a6a6
+			backColor: 8a8a8a
+			trailColor: 8a8a8a
+			width: 8
+			height: 16
+			shrinkY: 0
+			splashDamageRadius: 40
+			splashDamage: 3000
+			hitEffect: blastExplosion
+			despawnEffect: blastExplosion
+			ammoMultiplier: 4
+			homingRange: 200
+			homingPower: 0.05
+			homingDelay: 30
+			hittable: false
+		}
+	}
+	{
+		name: moony-missile-launcher
+		x: 76.536686473
+		y: -184.7759065
+		rotateSpeed: 0.5
+		rotationLimit: 120
+		inaccuracy: 30
+		shootCone: 30
+		mirror: false
+		reload: 600
+		rotate: true
+		shootSound: none
+		baseRotation: -157.5
+		alwaysShooting: false
+		continuous: false
+		alwaysContinuous: false
+		shoot: {
+			type: ShootBarrel
+			barrels: [
+				-6, 0, 0
+				2, -4, 0
+				-2, 4, 0
+				6, 4, 0
+				2, 0, 0
+				-6, -4, 0
+				6, 0, 0
+				-2, -4, 0
+				-2, 0, 0
+				-6, 4, 0
+				6, -4, 0
+				2, 4, 0
+			]
+			shots: 12
+			shotDelay: 8
+		}
+		bullet: {
+			type: MissileBulletType
+			speed: 10
+			damage: 1200
+			buildingDamageMultiplier: 0.2
+			lifetime: 600
+			rangeOverride: 800
+			sprite: elfly-long-missile
+			pierceArmor: true
+			frontColor: a6a6a6
+			backColor: 8a8a8a
+			trailColor: 8a8a8a
+			width: 8
+			height: 16
+			shrinkY: 0
+			splashDamageRadius: 40
+			splashDamage: 3000
+			hitEffect: blastExplosion
+			despawnEffect: blastExplosion
+			ammoMultiplier: 4
+			homingRange: 200
+			homingPower: 0.05
+			homingDelay: 30
+			hittable: false
+		}
+	}
+	{
+		name: moony-missile-launcher
+		x: -76.536686473
+		y: -184.7759065
+		rotateSpeed: 0.5
+		rotationLimit: 120
+		inaccuracy: 30
+		shootCone: 30
+		mirror: false
+		reload: 600
+		rotate: true
+		shootSound: none
+		baseRotation: 157.5
+		alwaysShooting: false
+		continuous: false
+		alwaysContinuous: false
+		shoot: {
+			type: ShootBarrel
+			barrels: [
+				-6, 0, 0
+				2, -4, 0
+				-2, 4, 0
+				6, 4, 0
+				2, 0, 0
+				-6, -4, 0
+				6, 0, 0
+				-2, -4, 0
+				-2, 0, 0
+				-6, 4, 0
+				6, -4, 0
+				2, 4, 0
+			]
+			shots: 12
+			shotDelay: 8
+		}
+		bullet: {
+			type: MissileBulletType
+			speed: 10
+			damage: 1200
+			buildingDamageMultiplier: 0.2
+			lifetime: 600
+			rangeOverride: 800
+			sprite: elfly-long-missile
+			pierceArmor: true
+			frontColor: a6a6a6
+			backColor: 8a8a8a
+			trailColor: 8a8a8a
+			width: 8
+			height: 16
+			shrinkY: 0
+			splashDamageRadius: 40
+			splashDamage: 3000
+			hitEffect: blastExplosion
+			despawnEffect: blastExplosion
+			ammoMultiplier: 4
+			homingRange: 200
+			homingPower: 0.05
+			homingDelay: 30
+			hittable: false
+		}
+	}
+	{
+		name: moony-missile-launcher
+		x: 184.7759065
+		y: 76.536686473
+		rotateSpeed: 0.5
+		rotationLimit: 120
+		inaccuracy: 30
+		shootCone: 30
+		mirror: false
+		reload: 600
+		rotate: true
+		shootSound: none
+		baseRotation: -67.5
+		alwaysShooting: false
+		continuous: false
+		alwaysContinuous: false
+		shoot: {
+			type: ShootBarrel
+			barrels: [
+				-6, 0, 0
+				2, -4, 0
+				-2, 4, 0
+				6, 4, 0
+				2, 0, 0
+				-6, -4, 0
+				6, 0, 0
+				-2, -4, 0
+				-2, 0, 0
+				-6, 4, 0
+				6, -4, 0
+				2, 4, 0
+			]
+			shots: 12
+			shotDelay: 8
+		}
+		bullet: {
+			type: MissileBulletType
+			speed: 10
+			damage: 1200
+			buildingDamageMultiplier: 0.2
+			lifetime: 600
+			rangeOverride: 800
+			sprite: elfly-long-missile
+			pierceArmor: true
+			frontColor: a6a6a6
+			backColor: 8a8a8a
+			trailColor: 8a8a8a
+			width: 8
+			height: 16
+			shrinkY: 0
+			splashDamageRadius: 40
+			splashDamage: 3000
+			hitEffect: blastExplosion
+			despawnEffect: blastExplosion
+			ammoMultiplier: 4
+			homingRange: 200
+			homingPower: 0.05
+			homingDelay: 30
+			hittable: false
+		}
+	}
+	{
+		name: moony-missile-launcher
+		x: -184.7759065
+		y: 76.536686473
+		rotateSpeed: 0.5
+		rotationLimit: 120
+		inaccuracy: 30
+		shootCone: 30
+		mirror: false
+		reload: 600
+		rotate: true
+		shootSound: none
+		baseRotation: 67.5
+		alwaysShooting: false
+		continuous: false
+		alwaysContinuous: false
+		shoot: {
+			type: ShootBarrel
+			barrels: [
+				-6, 0, 0
+				2, -4, 0
+				-2, 4, 0
+				6, 4, 0
+				2, 0, 0
+				-6, -4, 0
+				6, 0, 0
+				-2, -4, 0
+				-2, 0, 0
+				-6, 4, 0
+				6, -4, 0
+				2, 4, 0
+			]
+			shots: 12
+			shotDelay: 8
+		}
+		bullet: {
+			type: MissileBulletType
+			speed: 10
+			damage: 1200
+			buildingDamageMultiplier: 0.2
+			lifetime: 600
+			rangeOverride: 800
+			sprite: elfly-long-missile
+			pierceArmor: true
+			frontColor: a6a6a6
+			backColor: 8a8a8a
+			trailColor: 8a8a8a
+			width: 8
+			height: 16
+			shrinkY: 0
+			splashDamageRadius: 40
+			splashDamage: 3000
+			hitEffect: blastExplosion
+			despawnEffect: blastExplosion
+			ammoMultiplier: 4
+			homingRange: 200
+			homingPower: 0.05
+			homingDelay: 30
+			hittable: false
+		}
+	}
+	{
+		name: moony-missile-launcher
+		x: 184.7759065
+		y: -76.536686473
+		rotateSpeed: 0.5
+		rotationLimit: 120
+		inaccuracy: 30
+		shootCone: 30
+		mirror: false
+		reload: 600
+		rotate: true
+		shootSound: none
+		baseRotation: -112.5
+		alwaysShooting: false
+		continuous: false
+		alwaysContinuous: false
+		shoot: {
+			type: ShootBarrel
+			barrels: [
+				-6, 0, 0
+				2, -4, 0
+				-2, 4, 0
+				6, 4, 0
+				2, 0, 0
+				-6, -4, 0
+				6, 0, 0
+				-2, -4, 0
+				-2, 0, 0
+				-6, 4, 0
+				6, -4, 0
+				2, 4, 0
+			]
+			shots: 12
+			shotDelay: 8
+		}
+		bullet: {
+			type: MissileBulletType
+			speed: 10
+			damage: 1200
+			buildingDamageMultiplier: 0.2
+			lifetime: 600
+			rangeOverride: 800
+			sprite: elfly-long-missile
+			pierceArmor: true
+			frontColor: a6a6a6
+			backColor: 8a8a8a
+			trailColor: 8a8a8a
+			width: 8
+			height: 16
+			shrinkY: 0
+			splashDamageRadius: 40
+			splashDamage: 3000
+			hitEffect: blastExplosion
+			despawnEffect: blastExplosion
+			ammoMultiplier: 4
+			homingRange: 200
+			homingPower: 0.05
+			homingDelay: 30
+			hittable: false
+		}
+	}
+	{
+		name: moony-missile-launcher
+		x: -184.7759065
+		y: -76.536686473
+		rotateSpeed: 0.5
+		rotationLimit: 120
+		inaccuracy: 30
+		shootCone: 30
+		mirror: false
+		reload: 600
+		rotate: true
+		shootSound: none
+		baseRotation: 112.5
+		alwaysShooting: false
+		continuous: false
+		alwaysContinuous: false
+		shoot: {
+			type: ShootBarrel
+			barrels: [
+				-6, 0, 0
+				2, -4, 0
+				-2, 4, 0
+				6, 4, 0
+				2, 0, 0
+				-6, -4, 0
+				6, 0, 0
+				-2, -4, 0
+				-2, 0, 0
+				-6, 4, 0
+				6, -4, 0
+				2, 4, 0
+			]
+			shots: 12
+			shotDelay: 8
+		}
+		bullet: {
+			type: MissileBulletType
+			speed: 10
+			damage: 1200
+			buildingDamageMultiplier: 0.2
+			lifetime: 600
+			rangeOverride: 800
+			sprite: elfly-long-missile
+			pierceArmor: true
+			frontColor: a6a6a6
+			backColor: 8a8a8a
+			trailColor: 8a8a8a
+			width: 8
+			height: 16
+			shrinkY: 0
+			splashDamageRadius: 40
+			splashDamage: 3000
+			hitEffect: blastExplosion
+			despawnEffect: blastExplosion
+			ammoMultiplier: 4
+			homingRange: 200
+			homingPower: 0.05
+			homingDelay: 30
+			hittable: false
+		}
+	}
+	
+	{
+		name: moony-gatling
+		x: 200
+		y: 0
+		rotateSpeed: 4
+		rotationLimit: 210
+		inaccuracy: 0
+		shootCone: 1
+		mirror: false
+		reload: 10
+		cooldownTime: 2
+		rotate: true
+		shootSound: none
+		baseRotation: -90
+		alwaysShooting: false
+		continuous: false
+		alwaysContinuous: false
+		shake: 1
+		recoil: 1
+		shadow: 1
+		bullet: {
+			type: RailBulletType
+			shootEffect: none
+			length: 400
+			pointEffectSpace: 8
+			pierceEffect: none
+			pointEffect: mine
+			hitEffect: none
+			smokeEffect: none
+			damage: 1200
+			pierceDamageFactor: 99999999
+			pierce: false
+			pierceArmor: true
+			buildingDamageMultiplier: 0.05
+			shrinkY: 0
+		}
+	}
+	{
+		name: moony-gatling
+		x: -200
+		y: 0
+		rotateSpeed: 4
+		rotationLimit: 210
+		inaccuracy: 0
+		shootCone: 1
+		mirror: false
+		reload: 10
+		cooldownTime: 2
+		rotate: true
+		shootSound: none
+		baseRotation: 90
+		alwaysShooting: false
+		continuous: false
+		alwaysContinuous: false
+		shake: 1
+		recoil: 1
+		shadow: 1
+		bullet: {
+			type: RailBulletType
+			shootEffect: none
+			length: 400
+			pointEffectSpace: 8
+			pierceEffect: none
+			pointEffect: mine
+			hitEffect: none
+			smokeEffect: none
+			damage: 1200
+			pierceDamageFactor: 99999999
+			pierce: false
+			pierceArmor: true
+			buildingDamageMultiplier: 0.05
+			shrinkY: 0
+		}
+	}
+	{
+		name: moony-gatling
+		x: 0
+		y: 200
+		rotateSpeed: 4
+		rotationLimit: 210
+		inaccuracy: 0
+		shootCone: 1
+		mirror: false
+		reload: 10
+		cooldownTime: 2
+		rotate: true
+		shootSound: none
+		baseRotation: 0
+		alwaysShooting: false
+		continuous: false
+		alwaysContinuous: false
+		shake: 1
+		recoil: 1
+		shadow: 1
+		bullet: {
+			type: RailBulletType
+			shootEffect: none
+			length: 400
+			pointEffectSpace: 8
+			pierceEffect: none
+			pointEffect: mine
+			hitEffect: none
+			smokeEffect: none
+			damage: 1200
+			pierceDamageFactor: 99999999
+			pierce: false
+			pierceArmor: true
+			buildingDamageMultiplier: 0.05
+			shrinkY: 0
+		}
+	}
+	{
+		name: moony-gatling
+		x: 0
+		y: -200
+		rotateSpeed: 4
+		rotationLimit: 210
+		inaccuracy: 0
+		shootCone: 1
+		mirror: false
+		reload: 10
+		cooldownTime: 2
+		rotate: true
+		shootSound: none
+		baseRotation: 180
+		alwaysShooting: false
+		continuous: false
+		alwaysContinuous: false
+		shake: 1
+		recoil: 1
+		shadow: 1
+		bullet: {
+			type: RailBulletType
+			shootEffect: none
+			length: 400
+			pointEffectSpace: 8
+			pierceEffect: none
+			pointEffect: mine
+			hitEffect: none
+			smokeEffect: none
+			damage: 1200
+			pierceDamageFactor: 99999999
+			pierce: false
+			pierceArmor: true
+			buildingDamageMultiplier: 0.05
+			shrinkY: 0
+		}
+	}
+	{
+		name: moony-gatling
+		x: 141.4213562373
+		y: 141.4213562373
+		rotateSpeed: 4
+		rotationLimit: 210
+		inaccuracy: 0
+		shootCone: 1
+		mirror: false
+		reload: 10
+		cooldownTime: 2
+		rotate: true
+		shootSound: none
+		baseRotation: -45
+		alwaysShooting: false
+		continuous: false
+		alwaysContinuous: false
+		shake: 1
+		recoil: 1
+		shadow: 1
+		bullet: {
+			type: RailBulletType
+			shootEffect: none
+			length: 400
+			pointEffectSpace: 8
+			pierceEffect: none
+			pointEffect: mine
+			hitEffect: none
+			smokeEffect: none
+			damage: 1200
+			pierceDamageFactor: 99999999
+			pierce: false
+			pierceArmor: true
+			buildingDamageMultiplier: 0.05
+			shrinkY: 0
+		}
+	}
+	{
+		name: moony-gatling
+		x: -141.4213562373
+		y: 141.4213562373
+		rotateSpeed: 4
+		rotationLimit: 210
+		inaccuracy: 0
+		shootCone: 1
+		mirror: false
+		reload: 10
+		cooldownTime: 2
+		rotate: true
+		shootSound: none
+		baseRotation: 45
+		alwaysShooting: false
+		continuous: false
+		alwaysContinuous: false
+		shake: 1
+		recoil: 1
+		shadow: 1
+		bullet: {
+			type: RailBulletType
+			shootEffect: none
+			length: 400
+			pointEffectSpace: 8
+			pierceEffect: none
+			pointEffect: mine
+			hitEffect: none
+			smokeEffect: none
+			damage: 1200
+			pierceDamageFactor: 99999999
+			pierce: false
+			pierceArmor: true
+			buildingDamageMultiplier: 0.05
+			shrinkY: 0
+		}
+	}
+	{
+		name: moony-gatling
+		x: 141.4213562373
+		y: -141.4213562373
+		rotateSpeed: 4
+		rotationLimit: 210
+		inaccuracy: 0
+		shootCone: 1
+		mirror: false
+		reload: 10
+		cooldownTime: 2
+		rotate: true
+		shootSound: none
+		baseRotation: -135
+		alwaysShooting: false
+		continuous: false
+		alwaysContinuous: false
+		shake: 1
+		recoil: 1
+		shadow: 1
+		bullet: {
+			type: RailBulletType
+			shootEffect: none
+			length: 400
+			pointEffectSpace: 8
+			pierceEffect: none
+			pointEffect: mine
+			hitEffect: none
+			smokeEffect: none
+			damage: 1200
+			pierceDamageFactor: 99999999
+			pierce: false
+			pierceArmor: true
+			buildingDamageMultiplier: 0.05
+			shrinkY: 0
+		}
+	}
+	{
+		name: moony-gatling
+		x: -141.4213562373
+		y: -141.4213562373
+		rotateSpeed: 4
+		rotationLimit: 210
+		inaccuracy: 0
+		shootCone: 1
+		mirror: false
+		reload: 10
+		cooldownTime: 2
+		rotate: true
+		shootSound: none
+		baseRotation: 135
+		alwaysShooting: false
+		continuous: false
+		alwaysContinuous: false
+		shake: 1
+		recoil: 1
+		shadow: 1
+		bullet: {
+			type: RailBulletType
+			shootEffect: none
+			length: 400
+			pointEffectSpace: 8
+			pierceEffect: none
+			pointEffect: mine
+			hitEffect: none
+			smokeEffect: none
+			damage: 1200
+			pierceDamageFactor: 99999999
+			pierce: false
+			pierceArmor: true
+			buildingDamageMultiplier: 0.05
+			shrinkY: 0
+		}
+	}
+]
+
+useless:[
+	{
+		name: none
 		x: 113.1370849898476
 		y: 113.1370849898476
 		rotateSpeed: 0
 		mirror: false
-		reload: 10
+		reload: 600
 		rotate: true
 		shootSound: none
 		baseRotation: 135
 		alwaysShooting: true
 		continuous: true
-		alwaysContinuous: true
 		bullet: {
 			type: ContinuousLaserBulletType
 			damage: 125000
+			pierceArmor: true
 			length: 1500
 			width: 5.625
-			hitEffect: hitMeltdown
-			lifetime: 400
+			hitEffect: none
+			lifetime: 600
 			shake: 0
 			despawnEffect: none
 			smokeEffect: none
@@ -100,10 +928,11 @@ weapons: [
 			incendAmount: 0
 			laserAbsorb: false
 			buildingDamageMultiplier: 0
+			lightStroke: 20
 			colors: [
-				dddddd66
-				ddddddff
-				ffffffff
+				8a8a8a30
+				8a8a8a80
+				a6a6a6ff
 				ffffffff
 			]
 		}
@@ -114,20 +943,20 @@ weapons: [
 		y: 113.1370849898476
 		rotateSpeed: 0
 		mirror: false
-		reload: 10
+		reload: 600
 		rotate: true
 		shootSound: none
 		baseRotation: -135
 		alwaysShooting: true
 		continuous: true
-		alwaysContinuous: true
 		bullet: {
 			type: ContinuousLaserBulletType
 			damage: 125000
+			pierceArmor: true
 			length: 1500
 			width: 5.625
-			hitEffect: hitMeltdown
-			lifetime: 400
+			hitEffect: none
+			lifetime: 600
 			shake: 0
 			despawnEffect: none
 			smokeEffect: none
@@ -137,10 +966,11 @@ weapons: [
 			incendAmount: 0
 			laserAbsorb: false
 			buildingDamageMultiplier: 0
+			lightStroke: 20
 			colors: [
-				dddddd66
-				ddddddff
-				ffffffff
+				8a8a8a30
+				8a8a8a80
+				a6a6a6ff
 				ffffffff
 			]
 		}
@@ -151,20 +981,20 @@ weapons: [
 		y: -113.1370849898476
 		rotateSpeed: 0
 		mirror: false
-		reload: 10
+		reload: 600
 		rotate: true
 		shootSound: none
 		baseRotation: 45
 		alwaysShooting: true
 		continuous: true
-		alwaysContinuous: true
 		bullet: {
 			type: ContinuousLaserBulletType
 			damage: 125000
+			pierceArmor: true
 			length: 1500
 			width: 5.625
-			hitEffect: hitMeltdown
-			lifetime: 400
+			hitEffect: none
+			lifetime: 600
 			shake: 0
 			despawnEffect: none
 			smokeEffect: none
@@ -174,10 +1004,11 @@ weapons: [
 			incendAmount: 0
 			laserAbsorb: false
 			buildingDamageMultiplier: 0
+			lightStroke: 20
 			colors: [
-				dddddd66
-				ddddddff
-				ffffffff
+				8a8a8a30
+				8a8a8a80
+				a6a6a6ff
 				ffffffff
 			]
 		}
@@ -188,20 +1019,20 @@ weapons: [
 		y: -113.1370849898476
 		rotateSpeed: 0
 		mirror: false
-		reload: 10
+		reload: 600
 		rotate: true
 		shootSound: none
 		baseRotation: -45
 		alwaysShooting: true
 		continuous: true
-		alwaysContinuous: true
 		bullet: {
 			type: ContinuousLaserBulletType
 			damage: 125000
+			pierceArmor: true
 			length: 1500
 			width: 5.625
-			hitEffect: hitMeltdown
-			lifetime: 400
+			hitEffect: none
+			lifetime: 600
 			shake: 0
 			despawnEffect: none
 			smokeEffect: none
@@ -211,10 +1042,11 @@ weapons: [
 			incendAmount: 0
 			laserAbsorb: false
 			buildingDamageMultiplier: 0
+			lightStroke: 20
 			colors: [
-				dddddd66
-				ddddddff
-				ffffffff
+				8a8a8a30
+				8a8a8a80
+				a6a6a6ff
 				ffffffff
 			]
 		}
@@ -225,20 +1057,20 @@ weapons: [
 		y: 320
 		rotateSpeed: 0
 		mirror: false
-		reload: 10
+		reload: 600
 		rotate: true
 		shootSound: none
 		baseRotation: 0
 		alwaysShooting: true
 		continuous: true
-		alwaysContinuous: true
 		bullet: {
 			type: ContinuousLaserBulletType
 			damage: 125000
+			pierceArmor: true
 			length: 10000
 			width: 5.625
-			hitEffect: hitMeltdown
-			lifetime: 400
+			hitEffect: none
+			lifetime: 600
 			shake: 0
 			despawnEffect: none
 			smokeEffect: none
@@ -248,10 +1080,11 @@ weapons: [
 			incendAmount: 0
 			laserAbsorb: false
 			buildingDamageMultiplier: 0
+			lightStroke: 20
 			colors: [
-				dddddd66
-				ddddddff
-				ffffffff
+				8a8a8a30
+				8a8a8a80
+				a6a6a6ff
 				ffffffff
 			]
 		}
@@ -262,20 +1095,20 @@ weapons: [
 		y: -320
 		rotateSpeed: 0
 		mirror: false
-		reload: 10
+		reload: 600
 		rotate: true
 		shootSound: none
 		baseRotation: 180
 		alwaysShooting: true
 		continuous: true
-		alwaysContinuous: true
 		bullet: {
 			type: ContinuousLaserBulletType
 			damage: 125000
+			pierceArmor: true
 			length: 10000
 			width: 5.625
-			hitEffect: hitMeltdown
-			lifetime: 400
+			hitEffect: none
+			lifetime: 600
 			shake: 0
 			despawnEffect: none
 			smokeEffect: none
@@ -285,10 +1118,11 @@ weapons: [
 			incendAmount: 0
 			laserAbsorb: false
 			buildingDamageMultiplier: 0
+			lightStroke: 20
 			colors: [
-				dddddd66
-				ddddddff
-				ffffffff
+				8a8a8a30
+				8a8a8a80
+				a6a6a6ff
 				ffffffff
 			]
 		}
@@ -299,20 +1133,20 @@ weapons: [
 		y: 0
 		rotateSpeed: 0
 		mirror: false
-		reload: 10
+		reload: 600
 		rotate: true
 		shootSound: none
 		baseRotation: -90
 		alwaysShooting: true
 		continuous: true
-		alwaysContinuous: true
 		bullet: {
 			type: ContinuousLaserBulletType
 			damage: 125000
+			pierceArmor: true
 			length: 10000
 			width: 5.625
-			hitEffect: hitMeltdown
-			lifetime: 400
+			hitEffect: none
+			lifetime: 600
 			shake: 0
 			despawnEffect: none
 			smokeEffect: none
@@ -322,10 +1156,11 @@ weapons: [
 			incendAmount: 0
 			laserAbsorb: false
 			buildingDamageMultiplier: 0
+			lightStroke: 20
 			colors: [
-				dddddd66
-				ddddddff
-				ffffffff
+				8a8a8a30
+				8a8a8a80
+				a6a6a6ff
 				ffffffff
 			]
 		}
@@ -336,20 +1171,20 @@ weapons: [
 		y: 0
 		rotateSpeed: 0
 		mirror: false
-		reload: 10
+		reload: 600
 		rotate: true
 		shootSound: none
 		baseRotation: 90
 		alwaysShooting: true
 		continuous: true
-		alwaysContinuous: true
 		bullet: {
 			type: ContinuousLaserBulletType
 			damage: 125000
+			pierceArmor: true
 			length: 10000
 			width: 5.625
-			hitEffect: hitMeltdown
-			lifetime: 400
+			hitEffect: none
+			lifetime: 600
 			shake: 0
 			despawnEffect: none
 			smokeEffect: none
@@ -359,10 +1194,11 @@ weapons: [
 			incendAmount: 0
 			laserAbsorb: false
 			buildingDamageMultiplier: 0
+			lightStroke: 20
 			colors: [
-				dddddd66
-				ddddddff
-				ffffffff
+				8a8a8a30
+				8a8a8a80
+				a6a6a6ff
 				ffffffff
 			]
 		}
