@@ -9,7 +9,7 @@ drag: 0.02
 flying: true
 health: 1500000
 hitSize: 400
-armor: 15000
+armor: 150000
 itemCapacity: 2500
 outlineColor: 8a8a8a
 range: 500
@@ -70,6 +70,9 @@ engines: [
 		rotation: -135
 	}
 ]
+immunities: [
+	erosion-of-moon
+]
 weapons: [
 	{
 		name: none
@@ -81,7 +84,7 @@ weapons: [
 		rotate: true
 		shootSound: none
 		baseRotation: 0
-		alwaysShooting: true
+		alwaysShooting: false
 		continuous: true
 		alwaysContinuous: true
 		bullet: {
@@ -91,6 +94,8 @@ weapons: [
 			pierceArmor: true
 			length: 400
 			width: 5.625
+			status: erosion-of-moon
+			statusDuration: 36000
 			hitEffect: none
 			lifetime: 600
 			shake: 0
@@ -165,6 +170,8 @@ weapons: [
 			splashDamage: 3000
 			hitEffect: blastExplosion
 			despawnEffect: blastExplosion
+			status: erosion-of-moon
+			statusDuration: 36000
 			ammoMultiplier: 4
 			homingRange: 200
 			homingPower: 0.05
@@ -226,6 +233,8 @@ weapons: [
 			splashDamage: 3000
 			hitEffect: blastExplosion
 			despawnEffect: blastExplosion
+			status: erosion-of-moon
+			statusDuration: 36000
 			ammoMultiplier: 4
 			homingRange: 200
 			homingPower: 0.05
@@ -287,6 +296,8 @@ weapons: [
 			splashDamage: 3000
 			hitEffect: blastExplosion
 			despawnEffect: blastExplosion
+			status: erosion-of-moon
+			statusDuration: 36000
 			ammoMultiplier: 4
 			homingRange: 200
 			homingPower: 0.05
@@ -348,6 +359,8 @@ weapons: [
 			splashDamage: 3000
 			hitEffect: blastExplosion
 			despawnEffect: blastExplosion
+			status: erosion-of-moon
+			statusDuration: 36000
 			ammoMultiplier: 4
 			homingRange: 200
 			homingPower: 0.05
@@ -409,6 +422,8 @@ weapons: [
 			splashDamage: 3000
 			hitEffect: blastExplosion
 			despawnEffect: blastExplosion
+			status: erosion-of-moon
+			statusDuration: 36000
 			ammoMultiplier: 4
 			homingRange: 200
 			homingPower: 0.05
@@ -470,6 +485,8 @@ weapons: [
 			splashDamage: 3000
 			hitEffect: blastExplosion
 			despawnEffect: blastExplosion
+			status: erosion-of-moon
+			statusDuration: 36000
 			ammoMultiplier: 4
 			homingRange: 200
 			homingPower: 0.05
@@ -531,6 +548,8 @@ weapons: [
 			splashDamage: 3000
 			hitEffect: blastExplosion
 			despawnEffect: blastExplosion
+			status: erosion-of-moon
+			statusDuration: 36000
 			ammoMultiplier: 4
 			homingRange: 200
 			homingPower: 0.05
@@ -592,6 +611,8 @@ weapons: [
 			splashDamage: 3000
 			hitEffect: blastExplosion
 			despawnEffect: blastExplosion
+			status: erosion-of-moon
+			statusDuration: 36000
 			ammoMultiplier: 4
 			homingRange: 200
 			homingPower: 0.05
@@ -629,6 +650,8 @@ weapons: [
 			pointEffect: mine
 			hitEffect: none
 			smokeEffect: none
+			status: erosion-of-moon
+			statusDuration: 36000
 			damage: 1200
 			pierceDamageFactor: 99999999
 			pierce: false
@@ -666,6 +689,8 @@ weapons: [
 			pointEffect: mine
 			hitEffect: none
 			smokeEffect: none
+			status: erosion-of-moon
+			statusDuration: 36000
 			damage: 1200
 			pierceDamageFactor: 99999999
 			pierce: false
@@ -703,6 +728,8 @@ weapons: [
 			pointEffect: mine
 			hitEffect: none
 			smokeEffect: none
+			status: erosion-of-moon
+			statusDuration: 36000
 			damage: 1200
 			pierceDamageFactor: 99999999
 			pierce: false
@@ -740,6 +767,8 @@ weapons: [
 			pointEffect: mine
 			hitEffect: none
 			smokeEffect: none
+			status: erosion-of-moon
+			statusDuration: 36000
 			damage: 1200
 			pierceDamageFactor: 99999999
 			pierce: false
@@ -777,6 +806,8 @@ weapons: [
 			pointEffect: mine
 			hitEffect: none
 			smokeEffect: none
+			status: erosion-of-moon
+			statusDuration: 36000
 			damage: 1200
 			pierceDamageFactor: 99999999
 			pierce: false
@@ -814,6 +845,8 @@ weapons: [
 			pointEffect: mine
 			hitEffect: none
 			smokeEffect: none
+			status: erosion-of-moon
+			statusDuration: 36000
 			damage: 1200
 			pierceDamageFactor: 99999999
 			pierce: false
@@ -851,6 +884,8 @@ weapons: [
 			pointEffect: mine
 			hitEffect: none
 			smokeEffect: none
+			status: erosion-of-moon
+			statusDuration: 36000
 			damage: 1200
 			pierceDamageFactor: 99999999
 			pierce: false
@@ -888,6 +923,8 @@ weapons: [
 			pointEffect: mine
 			hitEffect: none
 			smokeEffect: none
+			status: erosion-of-moon
+			statusDuration: 36000
 			damage: 1200
 			pierceDamageFactor: 99999999
 			pierce: false
