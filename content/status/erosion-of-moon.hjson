@@ -1,0 +1,7 @@
+localizedName: erosion of moon
+effectChance: 0
+show: true
+damage: 41.6666666666667
+damageMultiplier: 0.05
+speedMultiplier: 0.3
+reloadMultiplier: 0.15
