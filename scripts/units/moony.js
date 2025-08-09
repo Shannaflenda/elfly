@@ -12,6 +12,7 @@ Events.on(UnitDamageEvent, event =>{
 	const moonyPhaseThree = Vars.content.statusEffect("elfly-moony-phase-three");
 	
 	const retaliation = Vars.content.statusEffect("elfly-retaliation");
+	const retaliationImmune = Vars.content.statusEffect("elfly-retaliation-immune");
 	
 	if (unit == null || unit.type.name != "elfly-moony") return;
 	
@@ -23,6 +24,7 @@ Events.on(UnitDamageEvent, event =>{
 				
 			}
 			if (bullet.owner instanceof Unit){
+				if (bullet.owner.isImmune(retaliationImmune)) return;
 				mul = 3 * bullet.owner.damageMultiplier * Vars.state.rules.unitDamage(bullet.team);
 			}
 			bullet.owner.damagePierce(bullet.damage * mul);
