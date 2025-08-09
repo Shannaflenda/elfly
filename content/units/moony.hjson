@@ -97,7 +97,7 @@ weapons: [
 			status: erosion-of-moon
 			statusDuration: 36000
 			hitEffect: none
-			lifetime: 600
+			lifetime: 120
 			shake: 0
 			despawnEffect: none
 			smokeEffect: none
