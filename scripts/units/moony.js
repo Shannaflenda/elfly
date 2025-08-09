@@ -1,39 +1,52 @@
 Events.on(UnitDamageEvent, event =>{
 	
-	const phaseChanging = Vars.content.statusEffect("elfly-phase-changing");
-	const blessingOfMoon = Vars.content.statusEffect("elfly-blessing-of-moon");
-	const moonyPhaseTwo = Vars.content.statusEffect("elfly-moony-phase-two");
-	const moonyPhaseThree = Vars.content.statusEffect("elfly-moony-phase-three");
 	const unit = event.unit;
 	const bullet = event.bullet;
+	const timer = Vars.content.statusEffect("elfly-timer");
+	
+	const blessingOfMoon = Vars.content.statusEffect("elfly-blessing-of-moon");
+	const blessingOfSun = Vars.content.statusEffect("elfly-blessing-of-sun");
+	
+	const phaseChanging = Vars.content.statusEffect("elfly-phase-changing");
+	const moonyPhaseTwo = Vars.content.statusEffect("elfly-moony-phase-two");
+	const moonyPhaseThree = Vars.content.statusEffect("elfly-moony-phase-three");
+	
+	const retaliation = Vars.content.statusEffect("elfly-retaliation");
 	
 	if (unit == null || unit.type.name != "elfly-moony") return;
 	
-	/*if (unit.hasEffect(moonyPhaseTwo)){
-		if(bullet.owner != null){
-			if(bullet.owner instanceof Buildingc){
-				const buildingz = (Building)bullet.owner;
-				buildingz.damagePierce(bullet.damage * 1);
+	if (unit.hasEffect(moonyPhaseTwo)){
+		if(bullet.owner != null && bullet.owner instanceof Healthc && unit.hasEffect(retaliation)){
+			var mul = 0;
+			if (bullet.owner instanceof Building){
+				mul = 1 * Vars.state.rules.blockDamage(bullet.team);
+				
 			}
-			if(bullet.owner instanceof Unitc){
-				const unitz = (Unit)bullet.owner;
-				unitz.damagePierce(bullet.damage * 3);
+			if (bullet.owner instanceof Unit){
+				mul = 3 * bullet.owner.damageMultiplier * Vars.state.rules.unitDamage(bullet.team);
 			}
+			bullet.owner.damagePierce(bullet.damage * mul);
 		}
-	}*/
+	}
 	
 	if (unit.hasEffect(phaseChanging)) return;
 	
 	if (unit.health <= unit.maxHealth * 0.2 && !unit.hasEffect(moonyPhaseTwo)){
-		unit.apply(moonyPhaseTwo, 51840000000);
+		unit.apply(moonyPhaseTwo, 10000 * 86400 * 60);
 		unit.apply(phaseChanging, 600);
-		unit.apply(blessingOfMoon, 36000);
+		unit.apply(blessingOfMoon, 600 * 60);
+		unit.apply(timer, 180 * 60);
+		unit.apply(retaliation, 180 * 60);
 	}
 	
 	if (!unit.hasEffect(moonyPhaseTwo) ||　unit.hasEffect(phaseChanging)) return;
 		
 	if (unit.health <= unit.maxHealth * 0.1 && !unit.hasEffect(moonyPhaseThree)){
-		unit.apply(moonyPhaseThree, 51840000000);
+		unit.apply(moonyPhaseThree, 10000 * 86400 * 60);
 		unit.apply(phaseChanging, 600);
+		if(unit.hasEffect(timer)){
+			unit.apply(retaliation, unit.getDuration(retaliation) + 300 * 60);
+			unit.apply(blessingOfSun, 180 * 60);
+		}
 	}
 });

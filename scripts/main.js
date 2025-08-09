@@ -1,4 +1,5 @@
 require("elfly/units/moony")
+require("elfly/statuses/retaliation")
 
 Object.keys(Planets).forEach(p =>{if (Planets[p]!=null){Planets[p].alwaysUnlocked = true}})
 Object.keys(UnitTypes).forEach(p =>{if (UnitTypes[p]!=null){UnitTypes[p].hidden = false}})
