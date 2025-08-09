@@ -1,0 +1,9 @@
+localizedName: moony phase three
+effectChance: 0
+show: false
+damage: 5
+damageMultiplier: 2.5
+healthMultiplier: 0.1
+speedMultiplier: 3
+reloadMultiplier: 3
+

@@ -1,0 +1,6 @@
+localizedName: phase changing
+effectChance: 0
+show: false
+damage: -100000000000000000
+healthMultiplier: 1000000000
+damageMultiplier: 0.000000001

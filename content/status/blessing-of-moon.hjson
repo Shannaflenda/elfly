@@ -1,0 +1,5 @@
+localizedName: blessing of moon
+effectChance: 0
+show: true
+damageMultiplier: 1.5
+reloadMultiplier: 2
