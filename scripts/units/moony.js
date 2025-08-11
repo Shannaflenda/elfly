@@ -17,22 +17,14 @@ Events.on(UnitDamageEvent, event =>{
 	if (unit == null || unit.type.name != "elfly-moony") return;
 	
 	if (unit.hasEffect(moonyPhaseTwo)){
-		if(bullet.owner != null && bullet.owner instanceof Healthc && unit.hasEffect(retaliation)){
-			var mul = 0;
-			if (bullet.owner instanceof Building){
-				mul = 1 * Vars.state.rules.blockDamage(bullet.team);
-				
-			}
-			if (bullet.owner instanceof Unit){
-				if (bullet.owner.isImmune(retaliationImmune)) return;
-				mul = 3 * bullet.owner.damageMultiplier * Vars.state.rules.unitDamage(bullet.team);
-			}
-			bullet.owner.damagePierce(bullet.damage * mul);
+		if(!unit.hasEffect(timer)){
+			unit.apply(timer, 10 * 60);
+			unit.apply(retaliation, 4 * 60);
 		}
 	}
 	
 	if (unit.hasEffect(phaseChanging)) return;
-	
+	//below is phase changing
 	if (unit.health <= unit.maxHealth * 0.2 && !unit.hasEffect(moonyPhaseTwo)){
 		unit.apply(moonyPhaseTwo, 10000 * 86400 * 60);
 		unit.apply(phaseChanging, 600);
@@ -47,7 +39,7 @@ Events.on(UnitDamageEvent, event =>{
 		unit.apply(moonyPhaseThree, 10000 * 86400 * 60);
 		unit.apply(phaseChanging, 600);
 		if(unit.hasEffect(timer)){
-			unit.apply(retaliation, unit.getDuration(retaliation) + 300 * 60);
+			unit.apply(retaliation, 10000 * 86400 * 60);
 			unit.apply(blessingOfSun, 180 * 60);
 		}
 	}
