@@ -178,6 +178,7 @@ weapons: [
 			homingPower: 0.05
 			homingDelay: 30
 			hittable: false
+			absorbable: false
 		}
 	}
 	{
@@ -241,6 +242,7 @@ weapons: [
 			homingPower: 0.05
 			homingDelay: 30
 			hittable: false
+			absorbable: false
 		}
 	}
 	{
@@ -304,6 +306,7 @@ weapons: [
 			homingPower: 0.05
 			homingDelay: 30
 			hittable: false
+			absorbable: false
 		}
 	}
 	{
@@ -367,6 +370,7 @@ weapons: [
 			homingPower: 0.05
 			homingDelay: 30
 			hittable: false
+			absorbable: false
 		}
 	}
 	{
@@ -430,6 +434,7 @@ weapons: [
 			homingPower: 0.05
 			homingDelay: 30
 			hittable: false
+			absorbable: false
 		}
 	}
 	{
@@ -493,6 +498,7 @@ weapons: [
 			homingPower: 0.05
 			homingDelay: 30
 			hittable: false
+			absorbable: false
 		}
 	}
 	{
@@ -556,6 +562,7 @@ weapons: [
 			homingPower: 0.05
 			homingDelay: 30
 			hittable: false
+			absorbable: false
 		}
 	}
 	{
@@ -619,6 +626,7 @@ weapons: [
 			homingPower: 0.05
 			homingDelay: 30
 			hittable: false
+			absorbable: false
 		}
 	}
 	
