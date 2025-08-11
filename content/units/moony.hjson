@@ -20,6 +20,10 @@ targetAir: true
 faceTarget: false
 rotateSpeed: 0.01
 engineSize: 0
+immunities: [
+	erosion-of-moon
+	retaliation-immune
+]
 engines: [
 	{
 		x: 240
@@ -69,9 +73,6 @@ engines: [
 		radius: 10
 		rotation: -135
 	}
-]
-immunities: [
-	erosion-of-moon
 ]
 weapons: [
 	{
