@@ -24,6 +24,6 @@ Events.on(UnitDamageEvent, event =>{
 		if(bullet.type.status != erosionOfMoon){
 			percent = percent * percent
 		}
-		unit.damagePierce(unit.maxHealth * percent);
+		unit.damagePierce(Math.min(unit.maxHealth * percent, bulletRealDamage * 15));
 	}
 });
