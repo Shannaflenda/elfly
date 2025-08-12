@@ -1,3 +1,5 @@
+const tool = require("elfly/libs/tool");
+
 Events.on(UnitDamageEvent, event =>{
 	
 	const unit = event.unit;
@@ -12,18 +14,15 @@ Events.on(UnitDamageEvent, event =>{
 		var mul = 0;
 		var bulletRealDamage;
 		var percent;
+		var unitRealHealth;
 		
-		if(bullet.owner instanceof Building){
-			mul = Vars.state.rules.blockDamage(bullet.team);
-		}
-		if(bullet.owner instanceof Unit){
-			mul = bullet.owner.damageMultiplier * Vars.state.rules.unitDamage(bullet.team);
-		}
+		mul = tool.getBulletMultiplier(bullet);
 		bulletRealDamage = bullet.damage * mul;
 		percent = Math.min(Math.log1p(bulletRealDamage), 12) * 0.01;
 		if(bullet.type.status != erosionOfMoon){
 			percent = percent * percent
 		}
-		unit.damagePierce(Math.min(unit.maxHealth * percent, bulletRealDamage * 15));
+		unitRealHealth = tool.getUnitRealHealth(unit);
+		unit.damagePierce(Math.min(unitRealHealth * percent, bulletRealDamage * 15));
 	}
 });
