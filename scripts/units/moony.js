@@ -1,3 +1,5 @@
+const tool = require("elfly/libs/tool");
+
 Events.on(UnitDamageEvent, event =>{
 	
 	const unit = event.unit;
@@ -31,6 +33,7 @@ Events.on(UnitDamageEvent, event =>{
 		unit.apply(blessingOfMoon, 600 * 60);
 		unit.apply(timer, 180 * 60);
 		unit.apply(retaliation, 180 * 60);
+		tool.setToast(Icon.warning, "warning.moony-phase-two");
 	}
 	
 	if (!unit.hasEffect(moonyPhaseTwo) ||　unit.hasEffect(phaseChanging)) return;
@@ -38,8 +41,9 @@ Events.on(UnitDamageEvent, event =>{
 	if (unit.health <= unit.maxHealth * 0.1 && !unit.hasEffect(moonyPhaseThree)){
 		unit.apply(moonyPhaseThree, 10000 * 86400 * 60);
 		unit.apply(phaseChanging, 600);
+		unit.apply(retaliation, 10000 * 86400 * 60);
+		tool.setToast(Icon.warning, "warning.moony-phase-three");
 		if(unit.hasEffect(timer)){
-			unit.apply(retaliation, 10000 * 86400 * 60);
 			unit.apply(blessingOfSun, 180 * 60);
 		}
 	}

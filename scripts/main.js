@@ -1,4 +1,5 @@
 require("elfly/units/moony")
+require("elfly/units/spawn")
 require("elfly/statuses/retaliation")
 require("elfly/statuses/erosion-of-moon")
 require("elfly/statuses/meltdown-of-sun")
