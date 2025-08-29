@@ -23,4 +23,22 @@ function setB(b) {
 	}
 }
 
-Object.keys(Blocks).forEach(b => {if (b.category == Category.turret){b.targetAir = true;b.targetGround = true;if (b.ammoTypes != null){b.ammoTypes.each((k, v) => {setB(v)})}}})
+Object.keys(Blocks).forEach(b => {
+	if (Blocks[b] != null) {
+		var block = Blocks[b];
+		if (block.category == Category.turret){
+			if (block.targetAir != null) {
+				block.targetAir = true;
+				block.targetGround = true;
+			}
+			if (block.ammoTypes != null){
+				block.ammoTypes.each((k, v) => {
+					setB(v);
+				});
+			}
+			if (block.shootType != null){
+				setB(block.shootType);
+			}
+		}
+	}
+});
