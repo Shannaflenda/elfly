@@ -11,8 +11,12 @@ function getBulletMultiplier(bullet){
 	return mul;
 }
 
-function getUnitRealHealth(unit){
+function getUnitRealMaxHealth(unit){
 	return unit.maxHealth * unit.healthMultiplier * Vars.state.rules.unitHealth(unit.team);
+}
+
+function getUnitRealHealth(unit){
+	return unit.health * unit.healthMultiplier * Vars.state.rules.unitHealth(unit.team);
 }
 
 function setToast(icon, string){
@@ -25,6 +29,7 @@ function setToast(icon, string){
 
 module.exports = {
 	getBulletMultiplier: getBulletMultiplier,
+	getUnitRealMaxHealth: getUnitRealMaxHealth,
 	getUnitRealHealth: getUnitRealHealth,
 	setToast: setToast,
 };

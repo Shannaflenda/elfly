@@ -9,7 +9,7 @@ Events.on(UnitDamageEvent, event =>{
 	
 	if (unit == null || !unit.hasEffect(meltdownOfSun)) return;
 	
-	var unitRealHealth = tool.getUnitRealHealth(unit);
+	var unitRealHealth = tool.getUnitRealMaxHealth(unit);
 	unit.damagePierce(unitRealHealth * Math.ceil(unit.getDuration(meltdownOfSun) / 60) * 0.01);
 	unit.unapply(meltdownOfSun);
 });
