@@ -38,7 +38,7 @@ immunities: [
 	melting
 	sapped
 	electrified
-	sporeSlowed
+	spore-slowed
 	tarred
 	overdrive
 	overclock
