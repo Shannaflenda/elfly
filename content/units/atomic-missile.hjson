@@ -63,7 +63,9 @@ weapons: [
 			type: ExplosionBulletType
 			splashDamage: 50000
 			splashDamageRadius: 64
-			collidesTeam: true
+			collidesAir: true
+			collidesGround: true
+			collidesTiles: true
 			ammoMultiplier: 1
 			fragVelocityMin: 1
 			fragBullets: 1
