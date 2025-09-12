@@ -1,0 +1,43 @@
+name: "nuclear launcher"
+type: ItemTurret
+health: 3520
+size: 4
+recoil: 0.5
+fogRadiusMultiplier: 0.4
+coolantMultiplier: 6
+shootSound: missileLaunch
+
+minWarmup: 0.94
+shootWarmupSpeed: 0.03
+targetAir: false
+targetUnderBlocks: false
+
+shake: 6
+ammoPerShot: 20
+maxAmmo: 30
+shootY: -1
+outlineColor: ffffff
+reload: 600
+range: 1350
+shootCone: 1
+rotateSpeed: 0.9
+
+ammoTypes: {
+	copper: {
+		type: BasicBulletType
+		shootEffect: shootBig
+		smokeEffect: shootSmokeMissile
+		ammoMultiplier: 1
+		spawnUnit: elfly-atomic-missile
+	}
+}
+
+category: turret
+requirements: [
+	copper/1
+]
+
+
+
+
+
