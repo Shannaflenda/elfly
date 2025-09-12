@@ -11,7 +11,7 @@ minWarmup: 0.94
 shootWarmupSpeed: 0.03
 targetAir: false
 targetUnderBlocks: false
-
+predictTarget: false
 shake: 6
 ammoPerShot: 20
 maxAmmo: 30
@@ -36,6 +36,7 @@ category: turret
 requirements: [
 	copper/1
 ]
+
 
 
 
