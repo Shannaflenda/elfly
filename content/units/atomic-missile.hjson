@@ -1,9 +1,9 @@
 type: missile
 controller: MissileAI
 lowAltitude: true
-speed: 1.33333333334
+speed: 2
 rotateSpeed: 0.03
-lifetime: 5400
+lifetime: 3600
 isEnemy: false
 allowedInPayloads: false
 playerControllable: false
@@ -80,3 +80,4 @@ weapons: [
 		}
 	}
 ]
+
