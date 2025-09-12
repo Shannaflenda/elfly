@@ -79,6 +79,7 @@ weapons: [
 				hitEffect: none
 				hittable: false
 				absorbable: false
+				reflectable: false
 				pierce: true
 				pierceBuilding: true
 				pierceDamageFactor: 0.2
@@ -96,6 +97,7 @@ weapons: [
 					hitEffect: none
 					hittable: false
 					absorbable: false
+					reflectable: false
 					pierce: true
 					pierceBuilding: true
 					pierceDamageFactor: 0.2
@@ -113,6 +115,7 @@ weapons: [
 						hitEffect: none
 						hittable: false
 						absorbable: false
+						reflectable: false
 						pierce: true
 						pierceBuilding: true
 						pierceDamageFactor: 0.2
