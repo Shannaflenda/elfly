@@ -18,7 +18,7 @@ maxAmmo: 30
 shootY: -1
 outlineColor: ffffff
 reload: 3600
-range: 1350
+range: 7200
 shootCone: 1
 rotateSpeed: 0.1
 
@@ -36,10 +36,6 @@ category: turret
 requirements: [
 	copper/1
 ]
-
-
-
-
 
 
 
