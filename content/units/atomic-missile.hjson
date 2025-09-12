@@ -1,0 +1,122 @@
+type: missile
+controller: MissileAI
+lowAltitude: true
+speed: 0.66666666666667
+rotateSpeed: 1
+lifetime: 10800
+isEnemy: false
+allowedInPayloads: false
+playerControllable: false
+physics: false
+deathEffect: none
+useUnitCap: false
+createWreck: false
+createScorch: false
+flying: true
+hidden: true
+health: 10000
+armor: 6
+hitSize: 6
+engineSize: 0
+drawCell: false
+targetPriority: -1
+outlineColor: a8ffeb
+trailLength: 18
+missileAccelTime: 50
+loopSound: missileTrail
+loopSoundVolume: 0.6
+deathSound: largeExplosion
+fogRadius: 6
+maxRange: 6
+weapons: [
+	{
+		name: boom
+		shootCone: 360
+		mirror: false
+		reload: 1
+		deathExplosionEffect: massiveExplosion;
+		shootOnDeath: true
+		shake: 10
+		bullet: {
+			type: ExplosionBulletType
+			splashDamage: 50000
+			splashDamageRadius: 64
+			collidesTeam: true
+			buildingDamageMultiplier: 0.3
+			ammoMultiplier: 1
+			fragVelocityMin: 1
+			fragBullets: 3600
+			fragSpread: 0.1
+			fragRandomSpread: 0
+			despawnEffect: none
+			hitEffect: none
+			rangeOverride: 1
+			fragBullet: {
+				type: BasicBulletType
+				despawnEffect: none
+				hitEffect: none
+				sprite: elfly-none
+				hittable: false
+				damage: 0
+				lifetime: 10
+				pierce: true
+				pierceBuilding: true
+				collidesAir: false
+				collidesGround: false
+				speed: 0.01
+				trailChance: 0
+				intervalBullets: 1
+				bulletInterval: 120
+				intervalDelay: 1
+				intervalRandomSpread: 0
+				intervalBullet: {
+					type: BasicBulletType
+					despawnEffect: none
+					hitEffect: none
+					hittable: false
+					pierce: true
+					pierceBuilding: true
+					pierceDamageFactor: 0.1
+					damage: 1210
+					trailChance: 0
+					speed: 2.013333334
+					lifetime: 47.244094488
+					intervalBullets: 1
+					bulletInterval: 120
+					intervalDelay: 1
+					intervalRandomSpread: 0
+					intervalBullet: {
+						type: BasicBulletType
+						despawnEffect: none
+						hitEffect: none
+						hittable: false
+						pierce: true
+						pierceBuilding: true
+						pierceDamageFactor: 0.1
+						damage: 1210
+						trailChance: 0
+						speed: 2
+						lifetime: 90.2255639
+						intervalBullets: 1
+						bulletInterval: 120
+						intervalDelay: 1
+						intervalRandomSpread: 0
+						intervalBullet: {
+							type: BasicBulletType
+							despawnEffect: none
+							hitEffect: none
+							hittable: false
+							pierce: true
+							pierceBuilding: true
+							pierceDamageFactor: 0.1
+							damage: 725
+							trailChance: 0
+							speed: 1.986666666666666666666667
+							lifetime: 1000
+						}
+					}
+				}
+			}
+		}
+	}
+]
