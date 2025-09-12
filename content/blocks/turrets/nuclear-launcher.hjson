@@ -20,7 +20,7 @@ outlineColor: ffffff
 reload: 3600
 range: 1350
 shootCone: 1
-rotateSpeed: 0.9
+rotateSpeed: 0.1
 
 ammoTypes: {
 	copper: {
@@ -36,6 +36,7 @@ category: turret
 requirements: [
 	copper/1
 ]
+
 
 
 
