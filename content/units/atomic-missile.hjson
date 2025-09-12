@@ -14,6 +14,7 @@ createWreck: false
 createScorch: false
 flying: true
 hidden: true
+bounded: false
 health: 10000
 armor: 6
 hitSize: 6
@@ -80,5 +81,3 @@ weapons: [
 		}
 	}
 ]
-
-
