@@ -58,7 +58,7 @@ weapons: [
 				hittable: false
 				pierce: true
 				pierceBuilding: true
-				pierceDamageFactor: 0.1
+				pierceDamageFactor: 0.2
 				damage: 1210
 				trailChance: 0
 				speed: 2.013333334
@@ -74,7 +74,7 @@ weapons: [
 					hittable: false
 					pierce: true
 					pierceBuilding: true
-					pierceDamageFactor: 0.1
+					pierceDamageFactor: 0.2
 					damage: 1210
 					trailChance: 0
 					speed: 2
@@ -90,7 +90,7 @@ weapons: [
 						hittable: false
 						pierce: true
 						pierceBuilding: true
-						pierceDamageFactor: 0.1
+						pierceDamageFactor: 0.2
 						damage: 725
 						trailChance: 0
 						speed: 1.986666666666666666666667
@@ -101,3 +101,4 @@ weapons: [
 		}
 	}
 ]
+
