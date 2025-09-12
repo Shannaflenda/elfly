@@ -61,9 +61,12 @@ weapons: [
 		alwaysShooting: true
 		bullet: {
 			type: BasicBulletType
-			damage: 0
+			damage: 999999999
 			killShooter: true
-			instantDisappear: true
+			lifetime: 1
+			collidesTiles: false
+			collidesAir: false
+			collidesGround: false
 			ammoMultiplier: 1
 			fragVelocityMin: 1
 			fragBullets: 3600
@@ -122,4 +125,3 @@ weapons: [
 		}
 	}
 ]
-
