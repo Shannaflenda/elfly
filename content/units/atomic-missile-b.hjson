@@ -61,6 +61,9 @@ weapons: [
 		alwaysShooting: true
 		bullet: {
 			type: BasicBulletType
+			despawnEffect: none
+			hitEffect: none
+			hittable: false
 			damage: 999999999
 			killShooter: true
 			lifetime: 1
