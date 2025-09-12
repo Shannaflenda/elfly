@@ -114,7 +114,7 @@ weapons: [
 						pierceDamageFactor: 0.2
 						damage: 725
 						trailChance: 0
-						speed: 1.973333333333333333334
+						speed: 3.973333333333333333334
 						lifetime: 500
 					}
 				}
@@ -122,3 +122,4 @@ weapons: [
 		}
 	}
 ]
+
