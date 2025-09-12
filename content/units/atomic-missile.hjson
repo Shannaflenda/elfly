@@ -66,9 +66,10 @@ weapons: [
 			collidesAir: true
 			collidesGround: true
 			collidesTiles: true
+			keepVelocity: false
 			ammoMultiplier: 1
 			fragVelocityMin: 1
-			fragBullets: 1
+			fragBullets: 3600
 			fragSpread: 0.1
 			fragRandomSpread: 0
 			despawnEffect: none
@@ -76,9 +77,59 @@ weapons: [
 			rangeOverride: 1
 			fragBullet: {
 				type: BasicBulletType
-				killShooter: true
-				instantDisappear: true
-				spawnUnit: elfly-atomic-missile-b
+				despawnEffect: none
+				hitEffect: none
+				hittable: false
+				absorbable: false
+				reflectable: false
+				keepVelocity: false
+				pierce: true
+				pierceBuilding: true
+				pierceDamageFactor: 0.2
+				damage: 1210
+				trailChance: 0
+				speed: 4.02666666667
+				lifetime: 23.622047244
+				intervalBullets: 1
+				bulletInterval: 120
+				intervalDelay: 1
+				intervalRandomSpread: 0
+				intervalBullet: {
+					type: BasicBulletType
+					despawnEffect: none
+					hitEffect: none
+					hittable: false
+					absorbable: false
+					reflectable: false
+					keepVelocity: false
+					pierce: true
+					pierceBuilding: true
+					pierceDamageFactor: 0.2
+					damage: 1210
+					trailChance: 0
+					speed: 4
+					lifetime: 45.112782
+					intervalBullets: 1
+					bulletInterval: 120
+					intervalDelay: 1
+					intervalRandomSpread: 0
+					intervalBullet: {
+						type: BasicBulletType
+						despawnEffect: none
+						hitEffect: none
+						hittable: false
+						absorbable: false
+						reflectable: false
+						keepVelocity: false
+						pierce: true
+						pierceBuilding: true
+						pierceDamageFactor: 0.2
+						damage: 725
+						trailChance: 0
+						speed: 3.973333333333333333334
+						lifetime: 500
+					}
+				}
 			}
 		}
 	}
