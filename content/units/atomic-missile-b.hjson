@@ -28,6 +28,27 @@ loopSoundVolume: 0.6
 deathSound: largeExplosion
 fogRadius: 6
 maxRange: 6
+immunities: [
+	burning
+	freezing
+	unmoving
+	slow
+	wet
+	muddy
+	melting
+	sapped
+	electrified
+	sporeSlowed
+	tarred
+	overdrive
+	overclock
+	shielded
+	boss
+	shocked
+	blasted
+	corroded
+	disarmed
+]
 weapons: [
 	{
 		name: boom
@@ -101,4 +122,3 @@ weapons: [
 		}
 	}
 ]
-
