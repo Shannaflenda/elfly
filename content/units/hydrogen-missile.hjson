@@ -1,8 +1,8 @@
 type: missile
 controller: MissileAI
 lowAltitude: true
-speed: 2
-rotateSpeed: 0.1
+speed: 3
+rotateSpeed: 0.15
 lifetime: 3600
 isEnemy: false
 allowedInPayloads: false
@@ -15,8 +15,8 @@ createScorch: false
 flying: true
 hidden: true
 bounded: false
-health: 10000
-armor: 6
+health: 30000
+armor: 10
 hitSize: 6
 engineSize: 0
 drawCell: false
@@ -62,8 +62,8 @@ weapons: [
 		bullet: {
 			type: ExplosionBulletType
 			damage: 0
-			splashDamage: 50000
-			splashDamageRadius: 64
+			splashDamage: 500000
+			splashDamageRadius: 200
 			collidesAir: true
 			collidesGround: true
 			collidesTiles: true
@@ -88,10 +88,10 @@ weapons: [
 				pierce: true
 				pierceBuilding: true
 				pierceDamageFactor: 1
-				damage: 1210
+				damage: 3866.6666666666666666667
 				trailChance: 0
-				speed: 4.02666666667
-				lifetime: 23.622047244
+				speed: 6.04
+				lifetime: 49.180327868852459
 				intervalBullets: 1
 				bulletInterval: 120
 				intervalDelay: 1
@@ -107,10 +107,10 @@ weapons: [
 					pierce: true
 					pierceBuilding: true
 					pierceDamageFactor: 1
-					damage: 1210
+					damage: 3866.6666666666666666667
 					trailChance: 0
-					speed: 4
-					lifetime: 45.112782
+					speed: 6
+					lifetime: 93.75
 					intervalBullets: 1
 					bulletInterval: 120
 					intervalDelay: 1
@@ -126,13 +126,13 @@ weapons: [
 						pierce: true
 						pierceBuilding: true
 						pierceDamageFactor: 1
-						damage: 725
+						damage: 2333.3333333333333333334
 						trailChance: 0
-						speed: 3.973333333333333333334
-						lifetime: 500
+						speed: 5.96
+						lifetime: 1000
 						intervalBullets: 1
 						bulletInterval: 120
-						intervalDelay: 499
+						intervalDelay: 1499
 						intervalRandomSpread: 0
 						intervalBullet: {
 							type: BasicBulletType
@@ -161,7 +161,7 @@ abilities: [
 		effect: missileTrailSmoke
 		rotation: 180
 		y: -9
-		color: ffc8a466
+		color: a4ffe366
 		interval: 7
 	}
 ]
