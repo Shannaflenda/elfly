@@ -32,6 +32,14 @@ ammoTypes: {
 		ammoMultiplier: 1
 		spawnUnit: elfly-atomic-missile
 	}
+	elfly-crystal: {
+		type: BasicBulletType
+		rangeChange: 3600
+		shootEffect: shootBig
+		smokeEffect: shootSmokeMissile
+		ammoMultiplier: 1
+		spawnUnit: elfly-hydrogen-missile
+	}
 }
 
 category: turret
