@@ -145,7 +145,7 @@ weapons: [
 							pierce: false
 							damage: 0
 							trailChance: 0
-							speed: 4
+							speed: 6
 							lifetime: 3000
 						}
 					}
@@ -164,4 +164,5 @@ abilities: [
 		color: a4ffe366
 		interval: 7
 	}
+
 ]
