@@ -9,9 +9,11 @@ shootSound: missileLaunch
 
 minWarmup: 0.94
 shootWarmupSpeed: 0.03
+canOverdrive: false
 targetAir: true
 targetUnderBlocks: false
 predictTarget: false
+unitSort: strongest
 shake: 6
 ammoPerShot: 20
 maxAmmo: 30
