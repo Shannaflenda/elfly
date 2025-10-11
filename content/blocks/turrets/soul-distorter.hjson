@@ -1,6 +1,6 @@
 name: "Soul Distorter"
 type: LaserTurret
-health: 10000
+health: 120000
 range: 320
 rotateSpeed: 5
 outlineColor: a8ffeb
