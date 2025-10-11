@@ -28,14 +28,10 @@ shootType: {
 	colors: [a8ffebaa,a8ffeb77]
 	frontColor: a8ffebaa
 	backColor: a8ffeb77
+	lightColor: a8ffeb
+	hitColor: a8ffeb
 	status: meltdown-of-sun
 	statusDuration: 180
-	hitEffect: none
-	despawnEffect: none
-	shootEffect: none
-	chargeEffect: none
-	smokeEffect: none
-	trailEffect: none
 }
 
 category: turret
