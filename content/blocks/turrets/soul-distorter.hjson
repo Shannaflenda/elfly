@@ -1,0 +1,44 @@
+name: "Soul Distorter"
+type: LaserTurret
+health: 10000
+range: 320
+rotateSpeed: 5
+outlineColor: a8ffeb
+shootEffect: none
+smokeEffect: none
+hasPower: true
+size: 5
+recoil: 4
+shake: 2
+shootCone: 361
+shootY: 3
+shootDuration: 420
+reload: 30
+unitSort: strongest
+consumes: {
+	power: 2000
+}
+
+shootType: {
+	type: ContinuousFlameBulletType
+	damage: 350
+	length: 320
+	pierceCap: -1
+	flareColor: a8ffeb
+	colors: [a8ffebaa,a8ffeb77]
+	frontColor: a8ffebaa
+	backColor: a8ffeb77
+	status: meltdown-of-sun
+	statusDuration: 180
+	hitEffect: none
+	despawnEffect: none
+	shootEffect: none
+	chargeEffect: none
+	smokeEffect: none
+	trailEffect: none
+}
+
+category: turret
+requirements: [
+	copper/1
+]
