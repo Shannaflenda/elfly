@@ -15,7 +15,7 @@ Events.on(UnitDamageEvent, e =>{
 	unit.health -= damage;
 	unit.unapply(meltdownOfSun);
 	
-	if (owner.block != null && owner.block.name == "elfly-soul-distorter") {
+	if (owner != null && owner.block != null && owner.block.name == "elfly-soul-distorter") {
 		owner.health += Math.min(damage, owner.maxHealth - owner.health);
 	}
 });
@@ -34,7 +34,7 @@ Events.on(BuildDamageEvent, e =>{
 	
 	building.health -= damage;
 	
-	if (owner.block != null && owner.block.name == "elfly-soul-distorter") {
+	if (owner != null && owner.block != null && owner.block.name == "elfly-soul-distorter") {
 		owner.health += Math.min(damage, owner.maxHealth - owner.health);
 	}
 	
